@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>League Of Legends eSports</title>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="description" content="Welcome to League Of Legends eSports.">
+	<meta name="keywords" content="esports,league of legends,lol,lec,lcs,lck">
+	<meta name="author" content="Vuk Lekic 351/17"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="assets/images/logo.png" type="image/ico" sizes="128x128">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/semantic.min.css"/>
+	<link href="assets/css/owl.carousel.min.css" rel="stylesheet" type="text/css"/>
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script> -->
+	<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+	<script src="assets/js/	owl.carousel.min.js"></script>
+</head>
+<body>
+	<nav class="navbar has-background" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item logoText" href="index.html">
+        <img src="assets/images/logo.png" alt="logo" width="50" height="50">LoL eSports
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu"> <!-- aktivan -->
+  <!-- navbar start, navbar end -->
+       <div class="navbar-start navbar-item">
+          <!-- navbar items -->
+					<a href="https://www.facebook.com/lolesports/" target="_blank">
+						<i class="fab fa-facebook"></i>
+					</a>
+					<a href="https://twitter.com/lolesports" target="_blank">
+						<i class="fab fa-twitter"></i>
+					</a>
+					<a href="https://www.instagram.com/lolesports/?hl=sr" target="_blank">
+						<i class="fab fa-instagram"></i>
+					</a>
+					<a href="https://www.youtube.com/channel/UCvqRdlKsE5Q8mf8YXbdIJLw" target="_blank">
+						<i class="fab fa-youtube"></i>
+					</a>
+       </div>
+
+       <div class="navbar-end has-text-weight-medium is-uppercase">
+         <!-- navbar items -->
+         <a href="index.html" class="navbar-item is-size-6-desktop is-size-5-mobile is-size-5-tablet">
+           <i class="fa fa-home"></i>
+           Home
+         </a>
+				 <a href="teams.html" class="navbar-item is-size-6-desktop is-size-5-mobile is-size-5-tablet">Teams</a>
+				 <a href="shop.html" class="navbar-item is-size-6-desktop is-size-5-mobile is-size-5-tablet">Shop</a>
+       </div>
+       <div class="navbar-item has-text-weight-medium is-uppercase last-item">
+				 <div class="dropdown" id="login">
+  <div class="dropdown-trigger">
+    <button class="button dropdownBtn" aria-haspopup="true" aria-controls="dropdown-menu2">
+      <span>Login</span>
+      <span class="icon is-small">
+        <i class="fas fa-angle-down" aria-hidden="true"></i>
+      </span>
+    </button>
+  </div>
+  <div class="dropdown-menu" id="dropdown-menu2" role="menu">
+    <div class="dropdown-content">
+      <div class="dropdown-item">
+        <p class="title">Login</p>
+				<p class="subtitle has-text-custom">Please login to proceed.</p>
+      </div>
+      <hr class="dropdown-divider">
+      <div class="dropdown-item">
+				<div class="box">
+          <div class="field">
+              <p class="control has-icons-left">
+                <input id="loginMail" class="input" type="text" placeholder="Email">
+                <span class="icon is-small is-left">
+                  <i id="mailEnvelope" class="fa fa-envelope"></i>
+                </span>
+              </p>
+            </div>
+        <div class="field">
+            <p class="control has-icons-left">
+              <input id="loginPwd" class="input" type="password" placeholder="Password">
+              <span class="icon is-small is-left">
+                <i id="pwdLock" class="fa fa-lock"></i>
+              </span>
+            </p>
+          </div>
+        <div class="field">
+          <label class="checkbox has-text-black">
+            <input type="checkbox">
+            Remember me
+          </label>
+        </div>
+        <button id="loginBtn" class="button is-block is-link  is-fullwidth" disabled="true">Login</button>
+    </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- register -->
+<div class="dropdown" id="register">
+ <div class="dropdown-trigger">
+  <button class="button dropdownBtn" aria-haspopup="true" aria-controls="dropdown-menu2">
+   <span>Register</span>
+   <span class="icon is-small">
+    <i class="fas fa-angle-down" aria-hidden="true"></i>
+   </span>
+  </button>
+ </div>
+ <div class="dropdown-menu" id="dropdown-menu2" role="menu">
+  <div class="dropdown-content">
+   <div class="dropdown-item">
+    <p class="subtitle">Register an Account</p>
+   </div>
+   <hr class="dropdown-divider">
+   <div class="dropdown-item">
+		 <div class="box">
+	<p class="has-text-centered">
+		<progress id="progress" class="progress is-link is-small" value="0" max="100"></progress>
+	</p>
+	<label for="regEmail" class="label">E-Mail</label>
+	<p class="control">
+		<input id="regEmail" class="input" type="text" placeholder="johndoe@example.org">
+	</p>
+	<label for="pwd" class="label">Password</label>
+	<p class="control">
+		<input id="pwd" class="input" type="password" placeholder="●●●●●●●">
+	</p>
+	<label for="confirmPwd" class="label">Confirm Password</label>
+	<p class="control">
+		<input id="confirmPwd" class="input" type="password" placeholder="●●●●●●●">
+	</p>
+	<p class="control">
+		<button id="registerBtn" class="button gBtn is-link is-fullwidth">Register</button>
+	</p>
+</div>
+   </div>
+  </div>
+ </div>
+</div>
+       </div>
+    </div>
+  </nav>
+	<!-- carousel -->
+	<section class="hero is-medium">
+		<div id="carousel" class="owl-carousel owl-theme">
+      <div class="item"><img src="assets/images/carousel_111.jpg" alt="The Last of us"></div>
+      <div class="item"><img src="assets/images/carousel_222.png" alt="GTA V"></div>
+      <div class="item"><img src="assets/images/carousel_333.jpg" alt="Mirror Edge"></div>
+    </div>
+	</section>
+
+	<!-- promo -->
+	<section id="promo" class="hero is-custom">
+		<div class="columns">
+     <div id="promoImg1" class="column is-one-third">
+  	  <img src="assets/images/promo_1.png" alt="">
+     </div>
+    <div class="column">
+		 <h1 class="title">
+		  	League Of Legends
+		 </h1>
+		 <button class="btn btn-content" type="button" name="button">Cinematic</button>
+		 <div class="modal" id="modal">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+		<video id="tralier" controls>
+      <source src="assets/video/video.mp4" type="video/mp4">
+    </video>
+	</div>
+  <button class="modal-close is-large" aria-label="close"></button>
+</div>
+    </div>
+    <div id="promoImg2" class="column">
+      <img src="assets/images/promo_2.png" alt="">
+     </div>
+    </div>
+	</section>
+	<!-- nesto uopsteno o ligi -->
+	<section class="section">
+		<div class="hero">
+			<div id="league" class="columns">
+				<div id="owl-demo" class="owl-carousel owl-theme">
+          <div class="item">
+						<h2 class="title">FunPlus Phoenix </h2>
+						<p class="subtitle">2019 League of Legends World Championship winner</p>
+					</div>
+					<div class="item">
+						<h2 class="title">Season 10</h2>
+						<p class="subtitle">Is set to launch on January 10, 2020</p>
+					</div>
+					<div class="item">
+						<h2 class="title">Most popular game</h2>
+						<p class="subtitle"><span class="counter" data-count="660">0</span> million registered accounts</p>
+						<p class="subtitle"><span class="counter" data-count="115">0</span> million monthly players</p>
+					</div>
+					<div class="item">
+						<h2 class="title">Twitch</h2>
+						<p class="subtitle">Twitch record with 1.7 million viewers</p>
+					</div>
+        </div>
+			</div>
+    </div>
+	</section>
+	<!-- Newsletter -->
+	<section id="nsltr" class="hero">
+		<div class="hero-body">
+			<div class="container">
+				<div class="columns is-centered">
+					<div id="newsletterIn"class="column is-two-thirds">
+						<p class="control has-icons-left has-icons-right">
+						<input id="newsletter" class="input" type="email" placeholder="Enter your email address..."/>
+						<span class="icon is-small is-left"><i id="envelope" class="fa fa-envelope"></i></span></p>
+					</div>
+					<div id="newsletterIn2" class="column has-text-right">
+						<h3 class="title has-text-weight-light">Let's stay in touch.</h3>
+						<h4 class="subtitle has-text-weight-light">with new news</h4>
+						<button id="subscribeBtn" class="btn btn-content button navbar-button">
+						 <span> Subscribe </span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer id="footer"class="footer hero is-black">
+		<div class="columns is-mobile">
+		  <div class="column">
+		  	<img src="assets/images/logo2.png" alt="">
+		  </div>
+		  <div class="column">
+				<nav class="breadcrumb" aria-label="breadcrumbs">
+	  <ul>
+	    <li>
+	      <a href="#" target="_blank"><span class="icon is-small"><i class="fas fa-book" aria-hidden="true"></i></span>
+	        <span>Documentation</span>
+	      </a>
+	    </li>
+	    <li>
+	      <a href="author.html" target="_blank"><span class="icon is-small"><i class="fas fa-user" aria-hidden="true"></i></span>
+	        <span>Author</span>
+	      </a>
+	    </li>
+	    <li class="#">
+				<a href="#" target="_blank"><span class="icon is-small"><i class="fa fa-file"" aria-hidden="true"></i></span>
+	        <span>CSS</span>
+	      </a>
+	    </li>
+	  </ul>
+	</nav>
+		  </div>
+		  <div class="column">
+         <p class="cpy">© Vuk Lekic 351/17</p>
+		  </div>
+		</div>
+</footer>
+		 <script src="assets/js/main.js"></script>
+		 <script src="assets/js/forma.js"></script>
+		 <script src="assets/js/jquery.js"></script>
+  </body>
+</html>

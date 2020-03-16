@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "naziv": "JERSEY",
+        "href" : "jersey"
+    },
+    {
+        "id": 2,
+        "naziv": "T-SHIRT",
+        "href" : "tshirt"
+    },
+    {
+        "id": 3,
+        "naziv": "CAP",
+        "href" : "cap"
+    }
+]

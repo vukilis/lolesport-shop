@@ -1,0 +1,596 @@
+[
+    {
+      "id" : 100,
+      "page" : "naleague",
+      "slika" : "assets/images/teams/NA_league.png",
+      "boja" : "white",
+      "kategorija" : {
+                "idKategorija" : "1",
+                "naziv" : "LCS"
+            },
+      "title" : "A NEW ERA BEGINS",
+      "opis" : "",
+      "text" : "We believe the ten teams joining the NA LCS are the best possible blend of partners for the league. Representing talent, passion, and fan focus from within the esports community as well as expertise and legacy experience from traditional sports, these are dedicated, well structured, and ambitious organizations ready to take on the battle for NA LCS glory. Let the battle commence!",
+      "social" : {
+        "siteLink" : "https://watch.lolesports.com/",
+        "twitter" : "https://twitter.com/lolesports",
+        "instagram" : "https://www.instagram.com/lolesports/?hl=sr"
+      }
+    },
+    {
+      "id" : 1,
+      "page" : "tsm",
+      "slika" : "assets/images/teams/NA_team_1.png",
+      "boja" : "white",
+      "kategorija" : {
+                "idKategorija" : "1",
+                "naziv" : "LCS"
+            },
+      "title" : "TSM",
+      "opis" : "Six-time North American Champions ready to defend their back-to-back-to-back titles",
+      "text" : "The most iconic esports organization in North America, if not the world. The “TSM” chant has been heard from Shanghai to Paris, whether or not the team is even playing. They’re the only team in the history of League of Legends to attend every single World Championship and the only team to appear in every NA LCS finals. TSM have given us some of the biggest names in esports history while also cultivating a fanbase that towers over other Western esports orgs. Owner Andy “Reginald” Dinh has put together a Hall of Fame career as both a player and owner, and shows no desire to slow down as the competition grows harder. Pushing pros to deliver world-class performances, TSM has always led by competitive excellence and instinct, and are going into 2018 with a stronger vision than ever.",
+      "social" : {
+        "siteLink" : "https://tsm.gg/",
+        "twitter" : "https://twitter.com/tsm",
+        "instagram" : "https://www.instagram.com/tsm/?hl=sr"
+      }
+    },
+    {
+      "id" : 2,
+      "page" : "ggs",
+      "slika" : "assets/images/teams/NA_team_2.png",
+      "boja" : "yellow",
+      "kategorija" : {
+                "idKategorija" : "1",
+                "naziv" : "LCS"
+            },
+      "title" : "Golden Guardians",
+      "opis" : "One of the most successful teams in traditional sports comes to the NA LCS",
+      "text" : "The Golden State Warriors are one of the biggest brands in all of traditional sports – and they won’t rest until they are the largest brand in esports with the Golden Guardians. Their history of success is unparalleled: the Warriors lead the NBA in local, national, and international TV ratings, are home to 3 players from the 2016 All-NBA team, and continue to break the NBA records for online fan following and ticket, jersey, and merch sales. They know that the path to success in any sport relies on deep industry knowledge, and have brought in a passionate staff to build out similar support systems to those that their NBA team enjoys. Bringing home two of the last three NBA Finals has given this organization a strong appreciation for winning; team owner Joe Lacob is looking to replicate that success on the Rift. All of which begs the question: does TSM have a new rival for the title of NA LCS’s Baylife kings?",
+      "social" : {
+        "siteLink" : "https://www.goldenguardians.com/",
+        "twitter" : "https://twitter.com/goldenguardians",
+        "instagram" : "https://www.instagram.com/goldenguardians/"
+      }
+    },
+    {
+      "id" : 3,
+      "page" : "c9",
+      "slika" : "assets/images/teams/NA_team_3.png",
+      "boja" : "blue",
+      "kategorija" : {
+                "idKategorija" : "1",
+                "naziv" : "LCS"
+            },
+      "title" : "Cloud9",
+      "opis" : "Entered the NA LCS with a bang in 2013 and have been winning ever since",
+      "text" : "Cloud9 have become synonymous with championship-level League of Legends play in North America. Bursting onto the scene in summer 2013 from a dominant run in Challenger, C9 has never looked back, making the playoffs in 8 of 9 splits and representing NA at Worlds every year since 2013. Thanks to the organization’s focus on player wellness and building athlete brands, their pros have become some of the most prolific streamers in the community with massive dedicated fan followings. Their ability to consistently challenge the top teams in the league as they continue to bring on new team members sets the standard for all squads in the NA LCS; this is a veteran org that won't be intimidated facing new opponents next year.",
+      "social" : {
+        "siteLink" : "https://cloud9.gg/",
+        "twitter" : "https://twitter.com/Cloud9",
+        "instagram" : "https://www.instagram.com/cloud9gg/"
+      }
+    },
+    {
+      "id" : 4,
+      "page" : "fly",
+      "slika" : "assets/images/teams/NA_team_4.png",
+      "boja" : "green",
+      "kategorija" : {
+                "idKategorija" : "1",
+                "naziv" : "LCS"
+            },
+      "title" : "Flyquest",
+      "opis" : "Coming back stronger with a dedication to long-term growth",
+      "text" : "After learning about League of Legends from his son’s passion for the game, Wes Edens fell in love with the competitive scene and invested into FlyQuest at the beginning of the 2017 season. Motivated to come back even stronger this spring, FLY will return with a new brand, a new management team, and plans to build a new training center similar to the facility recently opened for Wes’s other sports team: the NBA’s Milwaukee Bucks. And in addition to improving their performance on the Rift, FlyQuest are also focused on becoming one of the most fan-centric teams in the NA LCS. In the same way the Bucks have been able to galvanize their fan base around #FearTheDeer, FLY has exciting plans to make the community a part of their team’s operations, bringing their supporters closer to the action than ever before. FLY may have struggled at times during their rookie season, but Wes Edens’ recently resurgent Bucks team shows that you shouldn’t bet against this squad for long.",
+      "social" : {
+        "siteLink" : "http://www.flyquest.gg/",
+        "twitter" : "https://twitter.com/FlyQuest",
+        "instagram" : "https://www.instagram.com/Flyquestsports/"
+      }
+    },
+    {
+      "id" : 5,
+      "page" : "dig",
+      "slika" : "assets/images/teams/NA_team_5.png",
+      "boja" : "darkYellow",
+      "kategorija" : {
+                "idKategorija" : "1",
+                "naziv" : "LCS"
+            },
+      "title" : "Dignitas",
+      "opis" : "After more than a year of abscence from the League of Legends scene, ESPN reported in April 2019 that Dignitas had agreed to buy a controlling share of Clutch Gaming, one of the new franchises that had joined after their departure, from the NBA's Houston Rockets",
+      "text" : "Dignitas is an international esports team headquartered in Great Britain. It was founded on September 9, 2003 as a fusion of the Battlefield 1942 clans Legion Condor and Sweden Kompanix. Later on, more teams were added to the organization, and in July 2004 Team Dignitas was registered as a company - Team Dignitas Ltd. In addition to their League of Legends team, Dignitas also sponsors teams and players for Battlefield 3, Counter Strike, Fifa, various fighting games, Quake Live, racing games, and StarCraft II.",
+      "social" : {
+        "siteLink" : "http://dignitas.gg/",
+        "twitter" : "https://twitter.com/Dignitas",
+        "instagram" : "https://www.instagram.com/Dignitas/"
+      }
+    },
+    {
+      "id" : 6,
+      "page" : "im",
+      "slika" : "assets/images/teams/NA_team_6.png",
+      "boja" : "lightBlue",
+      "kategorija" : {
+                "idKategorija" : "1",
+                "naziv" : "LCS"
+            },
+      "title" : "Immortals",
+      "opis" : "On June 12, it was announced that Immortals' parent company Immortals Gaming Club had acquired Infinite Esports & Entertainment, the parent company of OpTic Gaming. The LCS team was set to rebrand in 2020",
+      "text" : "Immortals was announced on October 7, 2015 as a new esports franchise and also the new brand of Team 8, with that roster being their first of multiple planned esports teams.[1] Soon after the team's creation, support player Dodo8 became the team's player manager, retiring from competitive play.[2][3] Immortals ended up with an entirely different roster from the Team 8 players that they started with: on December 8, they announced Huni, Reignover, Pobelter, WildTurtle, and Adrian as their roster for the 2016 season",
+      "social" : {
+        "siteLink" : "https://www.immortals.gg/",
+        "twitter" : "https://twitter.com/Immortals",
+        "instagram" : "https://www.instagram.com/immortals_gg/"
+      }
+    },
+    {
+      "id" : 7,
+      "page" : "100",
+      "slika" : "assets/images/teams/NA_team_7.png",
+      "boja" : "redWhite",
+      "kategorija" : {
+                "idKategorija" : "1",
+                "naziv" : "LCS"
+            },
+      "title" : "100 Thieves",
+      "opis" : "Two proven champs join forces to win in a new arena",
+      "text" : "100 Thieves enter the NA LCS behind the strong combination of Matthew \"Nadeshot\" Haag’s deep esports experience and the Cleveland Cavaliers’ championship sports expertise. Nadeshot knows what it takes to build a brand and become a champion – he’s grown his personal YouTube channel to over 3 million subscribers, started a successful streetwear business, and won 7 major gaming titles over the course of his career. Couple that with the 3-time-defending Eastern Conference Champion (and 2016 NBA Champion) Cleveland Cavaliers, and the smart and hungry management team they bring to the table, and you get an organization ready to steal some wins from the established powers. When 100 Thieves meet up against the Golden Guardians in a Lolesports rematch of the last three NBA Finals, more than just NA LCS standings will be on the line.",
+      "social" : {
+        "siteLink" : "https://100thieves.com/",
+        "twitter" : "https://twitter.com/100thieves",
+        "instagram" : "https://www.instagram.com/100thieves/"
+      }
+    },
+    {
+      "id" : 8,
+      "page" : "tl",
+      "slika" : "assets/images/teams/NA_team_8.png",
+      "boja" : "blueWhite",
+      "kategorija" : {
+                "idKategorija" : "1",
+                "naziv" : "LCS"
+            },
+      "title" : "Team Liquid",
+      "opis" : "One of the original brands in esports leading the way with pro development",
+      "text" : "As one of the oldest and best-known brands in esports, Team Liquid knows what it takes to build a successful team for the long-term: an incredible player development plan. That passion is baked into their DNA – almost every single top-tier young domestic player in NA has gone through Team Liquid Academy (or Curse Academy before that) and worked directly with owner Steve Arhancet. The reason they’ve been able to secure so much young talent: a forward-thinking org that makes smart commercial partnerships and invests in resources like state-of-the-art training facilities and innovative content for the fans. Beyond that, TL has also led the way on charitable initiatives, with team management and pro players alike helping groups like City Year and LA-area food banks. With a detailed plan for the future and an ownership group of accomplished sports and media veterans in aXiomatic to call on, Team Liquid is ready to lead the way across all facets of an evolved NA LCS.",
+      "social" : {
+        "siteLink" : "https://www.teamliquid.com/",
+        "twitter" : "https://twitter.com/teamliquidlol",
+        "instagram" : "https://www.instagram.com/teamliquid/"
+      }
+    },
+    {
+      "id" : 9,
+      "page" : "eg",
+      "slika" : "assets/images/teams/NA_team_9.png",
+      "boja" : "snowBlue",
+      "kategorija" : {
+                "idKategorija" : "1",
+                "naziv" : "LCS"
+            },
+      "title" : "Evil Geniuses",
+      "opis" : "Evil Geniuses is a North American League of Legends team. For the organization's history as a European team",
+      "text" : "Founded in 1999, Evil Geniuses is a North American esports organization and one of the oldest in the world, that has had a collection of players/teams over a multitude of games such as: Counter Strike 1.6, Counter Strike; Global Offensive, DotA 2, League of Legends, Quake Live, StarCraft II, Super Street Fighter IV, and World of Warcraft. In late 2012 to the start of 2013, Team EG had started looking for a roster to support in the League of Legends scene. The organization formed their first League of Legends team in January 2013 with the acquisition of the former Counter Logic Gaming EU roster.",
+      "social" : {
+        "siteLink" : "http://www.evilgeniuses.gg/",
+        "twitter" : "https://twitter.com/EvilGeniuses",
+        "instagram" : "https://www.instagram.com/evilgeniuses/"
+      }
+    },
+    {
+      "id" : 10,
+      "page" : "clg",
+      "slika" : "assets/images/teams/NA_team_10.png",
+      "boja" : "ligtHighBlue",
+      "kategorija" : {
+                "idKategorija" : "1",
+                "naziv" : "LCS"
+            },
+      "title" : "Counter Logic Gaming",
+      "opis" : "Welcome back, CLG fans. I am here to remind you that you are currently on a winning streak against TSM that spans back nearly half a year. Congratulations",
+      "text" : "Counter Logic Gaming (CLG) is a North American esports organization. Founded in April 2010 by George \"HotshotGG\" Georgallidis, CLG is the oldest League of Legends team still active to this day. Counter Logic Gaming currently hosts their flagship team and an academy team in the NA Academy League, CLG Academy, who they picked up following the North American Scouting Grounds and LCS franchising. In the past they have also sponsored Counter Logic Gaming EU and two different North American squads under the name CLG Black. The organization also supports teams and players in Counter Strike: Global Offensive, Super Smash Bros, and Overwatch.",
+      "social" : {
+        "siteLink" : "https://www.clg.gg/",
+        "twitter" : "https://twitter.com/clgaming",
+        "instagram" : "https://www.instagram.com/clgaming/"
+      }
+    },
+    {
+      "id" : 200,
+      "page" : "euleague",
+      "slika" : "assets/images/teams/EU_league.png",
+      "boja" : "white",
+      "kategorija" : {
+                "idKategorija" : "2",
+                "naziv" : "LEC"
+            },
+      "title" : "THE LEC RETURNS",
+      "opis" : "",
+      "text" : "We hope you'll find the new format even more exciting than what you’ve seen before. We’ve worked closely with the LEC teams to discuss what works best for them, their players, and the community, and the entire league is excited about the changes we’ve made. Check out the video for a visual guide, and if you have any questions about the new play-offs structure.",
+      "social" : {
+        "siteLink" : "https://watch.lolesports.com/",
+        "twitter" : "https://twitter.com/lolesports",
+        "instagram" : "https://www.instagram.com/lolesports/?hl=sr"
+      }
+    },
+    {
+      "id" : 11,
+      "page" : "s04",
+      "slika" : "assets/images/teams/EU_team_1.png",
+      "boja" : "ligtHighBlue",
+      "kategorija" : {
+                "idKategorija" : "2",
+                "naziv" : "LEC"
+            },
+      "title" : "FC Schalke 04",
+      "opis" : "FC Schalke 04 Esports is the esports department of football club FC Schalke 04",
+      "text" : "FC Schalke 04 Esports was announced on May 16, 2016, having purchased the EU LCS Summer 2016 seed and roster of Elements. Their roster included Steve, Gilius, MrRalleZ, and sprattel from Elements's Spring Season lineup, with Fox from Unicorns of Love replacing Eika. With the acquisition, FC Schalke 04 became the second professional sports organization to sign a League of Legends team, after Beşiktaş acquired Aces High in 2015.",
+      "social" : {
+        "siteLink" : "https://schalke04.de/esports",
+        "twitter" : "https://twitter.com/S04Esports",
+        "instagram" : "https://www.instagram.com/s04_esport/"
+      }
+    },
+    {
+      "id" : 12,
+      "page" : "fnc",
+      "slika" : "assets/images/teams/EU_team_2.png",
+      "boja" : "orange",
+      "kategorija" : {
+                "idKategorija" : "2",
+                "naziv" : "LEC"
+            },
+      "title" : "Fnatic",
+      "opis" : "The future is Fnatic",
+      "text" : "Fnatic is a professional esports organization consisting of players from around the world across a variety of games. On March 14, 2011, Fnatic entered the League of Legends scene with the acquisition of myRevenge. Fnatic is one of the strongest European teams since the early days of competitive League of Legends, having been the champion of the Riot Season 1 Championship.",
+      "social" : {
+        "siteLink" : "https://fnatic.com/",
+        "twitter" : "https://twitter.com/FNATIC",
+        "instagram" : "https://www.instagram.com/fnatic.lol/"
+      }
+    },
+    {
+      "id" : 13,
+      "page" : "g2",
+      "slika" : "assets/images/teams/EU_team_3.png",
+      "boja" : "white",
+      "kategorija" : {
+                "idKategorija" : "2",
+                "naziv" : "LEC"
+            },
+      "title" : "G2 Esports",
+      "opis" : "Let's get our name on that trophy!",
+      "text" : "G2 Esports is one of the leading entertainment assets in esports, bringing together some of the best competitive players in the world and biggest personalities in gaming. The club was co-founded by legendary League of Legends player-turned-team owner, Carlos \"ocelote\" Rodriguez, and veteran esports entrepreneur and investor, Jens Hilgers. With decades of experience, G2’s multinational staff elevates the company to the highest levels of performance in every aspect of business in the esports industry. G2 collaborates with the best partners, creates top-of-the-line merchandise, develops the most entertaining content, and enables its players to surpass any obstacles to spark outstanding performance in the most prominent tournaments and leagues. G2 Esports is, and has been since inception, one of the top-five most successful esports clubs in the world.",
+      "social" : {
+        "siteLink" : "https://www.g2esports.com/",
+        "twitter" : "https://twitter.com/G2esports",
+        "instagram" : "https://www.instagram.com/g2esports/"
+      }
+    },
+    {
+      "id" : 14,
+      "page" : "mad",
+      "slika" : "assets/images/teams/EU_team_4.png",
+      "boja" : "gold",
+      "kategorija" : {
+                "idKategorija" : "2",
+                "naziv" : "LEC"
+            },
+      "title" : "MAD Lions",
+      "opis" : "There is so much that Hispanic culture offers the world and we are ready to bring that unique flavour to League of Legends fans throughout Europe and globally",
+      "text" : "After a successful 2019 season, which saw Splyce go all the way to the quarterfinals at Worlds, the team are taking the next step in their evolution. To mark the start of the 2020 LEC Spring Split, Splyce are rebranding, and will now play under the MAD Lions name and colours. For European League of Legends fans, MAD Lions will need little introduction. The team, founded in 2017, made an immediate impact on the Spanish esports scene, making it to the SuperLiga Orange playoffs in their first season, and were acquired by Splyce’s parent company, OverActive Media Group, earlier this year.",
+      "social" : {
+        "siteLink" : "https://madlions.com/",
+        "twitter" : "https://twitter.com/MADLions_LoLEN",
+        "instagram" : "https://www.instagram.com/madlions_lolen/"
+      }
+    },
+    {
+      "id" : 15,
+      "page" : "msf",
+      "slika" : "assets/images/teams/EU_team_5.png",
+      "boja" : "redMisf",
+      "kategorija" : {
+                "idKategorija" : "2",
+                "naziv" : "LEC"
+            },
+      "title" : "Misfits Gaming",
+      "opis" : "\"The goal is to make Worlds\": Misfits’ CEO and coach on their Summer Split plans",
+      "text" : "The start to the 2019 Spring Split was looking great for Misfits. They started off 3-1 through their first four games and had their eyes on making playoffs. Then the team began to flounder and had a rough rest of the season, including a four-game losing streak and a loss against Rogue, who ended up at the bottom of the standings. With a great roster and interim coach behind their backs, Misfits look to come back strong for the Summer Split however, with only one goal in mind: making Worlds.",
+      "social" : {
+        "siteLink" : "https://misfitsgaming.gg/",
+        "twitter" : "https://twitter.com/MisfitsGG",
+        "instagram" : "https://www.instagram.com/misfitsgg/"
+      }
+    },
+    {
+      "id" : 16,
+      "page" : "og",
+      "slika" : "assets/images/teams/EU_team_6.png",
+      "boja" : "white",
+      "kategorija" : {
+                "idKategorija" : "2",
+                "naziv" : "LEC"
+            },
+      "title" : "Origen",
+      "opis" : "Origen is a European team that was founded by xPeke",
+      "text" : "It’s expected that Fnatic will stand at the top of Europe. With a number of regional titles under its belt, Fnatic finished the 2019 season as the second-best team, failing only behind G2. Therefore the team wasn’t in need of big changes for 2020. By bringing one of the best junglers in the LEC to the roster and re-signing the rest of the team, Fnatic will very likely continue to dominate the regional league. If the synergy works out, the team might even have a shot at another international title.",
+      "social" : {
+        "siteLink" : "https://www.origen.gg/",
+        "twitter" : "https://twitter.com/Origengg",
+        "instagram" : "https://www.instagram.com/origengg/"
+      }
+    },
+    {
+      "id" : 17,
+      "page" : "rge",
+      "slika" : "assets/images/teams/EU_team_7.png",
+      "boja" : "blue",
+      "kategorija" : {
+                "idKategorija" : "2",
+                "naziv" : "LEC"
+            },
+      "title" : "Rogue",
+      "opis" : "We build championship esports teams and inclusive gaming communities",
+      "text" : "Going into Summer Split Rogue’s coaching staff showed trust in their academy team and promoted Inspired who finally got old enough and Larssen to the first team. They stayed in lower midfield for the first weeks of the season but after going 0-2 in week 6 the coaching staff decided to bench Profit and once again sub in young top laner Finn. In the last three weeks they also only went 3-3 but while the losses came against the top 3 they managed to beat the other three teams and ended up in 5th from a 4-way-tie due to Head-To-Head records. They were chosen by Splyce as their opponents as they were seen as more predictable but made them regret that decision ingame the next week as they came in well prepared and dominated Splyce in a fast 3-0 sweep. In Round 2 against Schalke they fought well but after a big throw at the end of game 3 the series turned around and they were beaten 1-3 which also meant that they were out of Worlds contention.",
+      "social" : {
+        "siteLink" : "https://rogue.gg/",
+        "twitter" : "https://twitter.com/Rogue",
+        "instagram" : "https://www.instagram.com/rogue.gg/"
+      }
+    },
+    {
+      "id" : 18,
+      "page" : "sk",
+      "slika" : "assets/images/teams/EU_team_8.png",
+      "boja" : "white",
+      "kategorija" : {
+                "idKategorija" : "2",
+                "naziv" : "LEC"
+            },
+      "title" : "SK Gaming",
+      "opis" : "We are a team full of rookies and untapped potential",
+      "text" : "Another eventful League of Legends off-season is almost in the books and we're finally ready to talk about our complete roster for 2020. We're keeping Crownshot and Sacre in the bottom and top lane respectively, as well as our mid laner Jenax who stepped in late into the summer split and almost managed to turn around our season and make it to his first LEC playoffs. For the jungle and support roles we will be welcoming new faces - one veteran of the European competitive scene and one LEC rookie - Kim \"Trick\" Kang-yun and Dino \"LIMIT\" Tot.",
+      "social" : {
+        "siteLink" : "https://www.sk-gaming.com/",
+        "twitter" : "https://twitter.com/SKGaming",
+        "instagram" : "https://www.instagram.com/skgaming/"
+      }
+    },
+    {
+      "id" : 19,
+      "page" : "xl",
+      "slika" : "assets/images/teams/EU_team_9.png",
+      "boja" : "redOrange",
+      "kategorija" : {
+                "idKategorija" : "2",
+                "naziv" : "LEC"
+            },
+      "title" : "Excel Esports",
+      "opis" : "Excel Esports is a British team. Their name was previously stylized exceL eSports and later exceL Esports",
+      "text" : "Excel started Summer Split once again with Hjarnan and kaSing in bot lane and Special in mid lane as new signing Mickey could not join the team in time. After a once again bad start Jeskla and Mystiques came back into bot lane whilst Mickey earned the spot as starting mid laner. After another 0-2 week the team managed to use the long break around Rift Rivals well and came back to LEC much improved from week 4 onwards. They had playoff positions within reach before losing their last 4 games of regular season against tougher competition and dropping back down to 10th.",
+      "social" : {
+        "siteLink" : "https://www.excelesports.com/",
+        "twitter" : "https://twitter.com/EXCEL",
+        "instagram" : "https://www.instagram.com/excel_esports/"
+      }
+    },
+    {
+      "id" : 20,
+      "page" : "vit",
+      "slika" : "assets/images/teams/EU_team_10.png",
+      "boja" : "yellow",
+      "kategorija" : {
+                "idKategorija" : "2",
+                "naziv" : "LEC"
+            },
+      "title" : "Excel Esports",
+      "opis" : "Leading esport team in France, aiming to conquer the World",
+      "text" : "Team Vitality formed its League of Legends team in December 2015 as its first expansion into PC gaming, acquiring Gambit Gaming's EU LCS Spring 2016 seed. Their first player signed at the time of announcement was former H2k support kaSing. 5 days later, Vitality completed their roster with former Gambit toplaner Cabochard, former CW jungler Shook, former ROCCAT midlaner Nukeduck and kaSing's former teammate Hjarnan. For their coaching staff, Vitality signed former Gambit coach Shaunz.",
+      "social" : {
+        "siteLink" : "https://vitality.gg/",
+        "twitter" : "https://twitter.com/TeamVitality",
+        "instagram" : "https://www.instagram.com/teamvitality/"
+      }
+    },
+    {
+      "id" : 300,
+      "page" : "lckleague",
+      "slika" : "assets/images/teams/LCK_league.png",
+      "boja" : "white",
+      "kategorija" : {
+                "idKategorija" : "3",
+                "naziv" : "LCK"
+            },
+      "title" : "LCK 2020 spring",
+      "opis" : "",
+      "text" : "The LCK 2020 Spring Split is the first split of the 2020 Season of League Champions Korea, South Korea's premier League of Legends tournament. Ten teams compete in a double round-robin group stage, with the top 5 qualifying to the Playoffs.",
+      "social" : {
+        "siteLink" : "https://watch.lolesports.com/",
+        "twitter" : "https://twitter.com/lolesports",
+        "instagram" : "https://www.instagram.com/lolesports/?hl=sr"
+      }
+    },
+    {
+      "id" : 21,
+      "page" : "af",
+      "slika" : "assets/images/teams/LCK_team_1.png",
+      "boja" : "snowBlue",
+      "kategorija" : {
+                "idKategorija" : "3",
+                "naziv" : "LCK"
+            },
+      "title" : "Afreeca Freecs",
+      "opis" : "Afreeca Freecs was announced on December 29, 2015, as the new name of Rebels Anarchy, with streaming platform Afreeca now as their title sponsor",
+      "text" : "Going into Summer Split Afreeca chose to start with Kiin, Dread, Ucal, Aiming, and Senan as their starting roster and after they had a great start equaling their spring wins after only 3 weeks of play they stuck with the roster for the whole split. However they did not manage to keep their performances consistent and after a slump they recovered just in time to reach 5th place in regular season which meant a place in the wildcard match of playoffs. After two very one-sided games Afreeca were far behind in game 3 despite getting Aiming on Draven relatively strong again but after punishing SKT for overextending and getting baron for it they took a fight at Elder Drake, were aced and lost the series 1-2 which meant that they once again would have to run the full gauntlet to play at Worlds. Gauntlet started well with a comeback victory in game 1 vs KZ but their opponents did not let that happen again and closed the remaining games of the series out before Afreeca could find a way to come back ending Afreeca’s hopes at another World Championship participation early.",
+      "social" : {
+        "siteLink" : "http://www.freecs.gg/main/main.html",
+        "twitter" : "https://twitter.com/Freecs_LoL",
+        "instagram" : "https://www.instagram.com/afreecafreecs/"
+      }
+    },
+    {
+      "id" : 22,
+      "page" : "apk",
+      "slika" : "assets/images/teams/LCK_team_2.png",
+      "boja" : "redWhite",
+      "kategorija" : {
+                "idKategorija" : "3",
+                "naziv" : "LCK"
+            },
+      "title" : "APK Prince",
+      "opis" : "APK Prince qualified to the 2020 LCK with victories over Hanwha Life Esports and Jin Air in the Spring Promotion Tournament",
+      "text" : "While it’s in their name, APK is far from royalty in the LCK, having just qualified for the big leagues in 2020. APK is looking to prove themselves coming into 2020 and show that they deserve to be called royalty. APK has had a quiet offseason, resigning AD Carry Kim “Trigger” Eui-joo. As APK is a new team to the LCK, let’s familiarize ourselves with the new roster.",
+      "social" : {
+        "siteLink" : "https://www.apkprince.com/",
+        "twitter" : "https://twitter.com/teamapkprince",
+        "instagram" : "https://www.youtube.com/channel/UCCQKvvkeN3wgUx4Y48KdQuQ"
+      }
+    },
+    {
+      "id" : 23,
+      "page" : "dwg",
+      "slika" : "assets/images/teams/LCK_team_3.png",
+      "boja" : "white",
+      "kategorija" : {
+                "idKategorija" : "3",
+                "naziv" : "LCK"
+            },
+      "title" : "DAMWON Gaming",
+      "opis" : "DAMWON Gaming is a South Korean multi-gaming eSports organization",
+      "text" : "Damwon trusted the roster after qualifying for LCK and showing up at KeSPA Cup and only signed AD carry sub Aries during offseason. After somewhat surprisingly beating both KT Rolster and Gen.G in week 1 DAMWON lost their next 4 series. These were against the teams that were on the top 4 positions after 3 weeks though and they recovered well from it with 6 wins in a row during which they picked up legendary toplaner Flame. After losing against 3 of those 4 again they finished a consistent Spring Split in 5th place with a 11-7 record. Into playoffs they went as complete underdog as they had lost 7/8 series against the other participants. After surprisingly beating SANDBOX Gaming in the wildcard round they got very quickly clean swept by Kingzone DragonX.",
+      "social" : {
+        "siteLink" : "https://damwon.gg/",
+        "twitter" : "https://twitter.com/DamwonGaming",
+        "instagram" : "https://www.instagram.com/dwg.official/"
+      }
+    },
+    {
+      "id" : 24,
+      "page" : "drx",
+      "slika" : "assets/images/teams/LCK_team_4.png",
+      "boja" : "ligtHighBlue",
+      "kategorija" : {
+                "idKategorija" : "3",
+                "naziv" : "LCK"
+            },
+      "title" : "DragonX",
+      "opis" : "ᴇɴᴊᴏʏ ᴄʜᴀʟʟᴇɴɢᴇ, ʙᴇ ᴀ ᴄʜᴀʟʟᴇɴɢᴇʀ",
+      "text" : "DragonX, formerly Kingzone DragonX had a relatively disappointing year given the organization’s history. With a trip to the Mid-Season Invitational in 2018, alongside a second-place finish behind Chinese favorite RNG, DragonX is looking to reclaim their spot atop the LCK. With the departure of Top Laner Kim “Rascal” Kwang-hee, Jungler Moon “Cuzz” Woo-chan, Mid Laner Yoo “Naehyun” Nae-hyun and support Park “TusiN” Jong-ik, DragonX is looking to rebuild for the upcoming 2020 season.",
+      "social" : {
+        "siteLink" : "https://drx.gg/",
+        "twitter" : "https://twitter.com/DRXGlobal",
+        "instagram" : "https://www.instagram.com/drxglobal/"
+      }
+    },
+    {
+      "id" : 25,
+      "page" : "gen",
+      "slika" : "assets/images/teams/LCK_team_5.png",
+      "boja" : "dirtYellow",
+      "kategorija" : {
+                "idKategorija" : "3",
+                "naziv" : "LCK"
+            },
+      "title" : "Gen.G",
+      "opis" : "We are building Gen.G to serve the generation that is coming of age through gaming and esports. Our mission is to help all people—players, creators, and fans—around the world to achieve their best through the games we love",
+      "text" : "Established in 2017, Gen.G is the leading esports organization connecting the U.S. and Asia. Ranked #6 in the 2019 Forbes list of the world’s most valuable esports companies, Gen.G is the only major organization that owns and operates top teams in the world’s leading esports markets -- China, South Korea, and the United States. Its unique portfolio of teams, winners of 7 global ",
+      "social" : {
+        "siteLink" : "https://geng.gg/",
+        "twitter" : "https://twitter.com/GenG_KR",
+        "instagram" : "https://www.instagram.com/gengesports/"
+      }
+    },
+    {
+      "id" : 26,
+      "page" : "grf",
+      "slika" : "assets/images/teams/LCK_team_6.png",
+      "boja" : "redWhite",
+      "kategorija" : {
+                "idKategorija" : "3",
+                "naziv" : "LCK"
+            },
+      "title" : "Griffin",
+      "opis" : "We are League of Legends team of Team Griffin, working hard to develop as the frontier of global E-Sports professional teams",
+      "text" : "Griffin LoL Team was established in December of 2016 and debuted in 2017 Korean Challengers League. With great results, the team has been promoted to Korean Champions League and since then the team has shown results such as becoming a finalist in 2018 Korean Champions League, 2nd place finish in regular season and winning the KeSPA Cup.",
+      "social" : {
+        "siteLink" : "https://teamgriffin.gg/",
+        "twitter" : "https://twitter.com/TeamGriffinLoL",
+        "instagram" : "https://www.instagram.com/teamgriffinlol/"
+      }
+    },
+    {
+      "id" : 27,
+      "page" : "hle",
+      "slika" : "assets/images/teams/LCK_team_7.png",
+      "boja" : "orange",
+      "kategorija" : {
+                "idKategorija" : "3",
+                "naziv" : "LCK"
+            },
+      "title" : "Hanwha Life Esports",
+      "opis" : "Our emblem consists of an orange arch, under which two arches in different grey tones are arranged in balance. These three arches represent trust, teamwork and innovation, respectively, trying to convey the team’s philosophy which emphasizes trust and cooperation between team members and creative plays. Based on our philosophy, which is supported by three pillars – trust, teamwork and innovation, we will breathe a fresh life into e-sports, which have been considered non-mainstream, aiming to upgrade their status to that of traditional sports.",
+      "text" : "T1 blasdalsla",
+      "social" : {
+        "siteLink" : "https://hle.kr/en",
+        "twitter" : "https://twitter.com/HLEofficial",
+        "instagram" : "https://www.instagram.com/hle.official/"
+      }
+    },
+    {
+      "id" : 28,
+      "page" : "kt",
+      "slika" : "assets/images/teams/LCK_team_8.png",
+      "boja" : "redWhite",
+      "kategorija" : {
+                "idKategorija" : "3",
+                "naziv" : "LCK"
+            },
+      "title" : "KT Rolster",
+      "opis" : "KT Rolster reunites Kuro, TusiN, and Aiming, completes 2020 LCK roster",
+      "text" : "The organization will go for a double-jungler strategy with Kim \"bonO\" Gi-beom and Kim \"Malrang\" Geun-seong. bonO also comes from Hanwha, where he played alongside SoHwan. Malrang joins from Jin Air Green Wings, a team that was recently relegated to Challengers Korea after losing in the 2020 Spring Promotion Tournament.",
+      "social" : {
+        "siteLink" : "http://kt-sports.co.kr/sports/site/main.do",
+        "twitter" : "https://twitter.com/ktRolster_tw",
+        "instagram" : "https://www.instagram.com/ktrolstagram/"
+      }
+    },
+    {
+      "id" : 29,
+      "page" : "sb",
+      "slika" : "assets/images/teams/LCK_team_9.png",
+      "boja" : "redWhite",
+      "kategorija" : {
+                "idKategorija" : "3",
+                "naziv" : "LCK"
+            },
+      "title" : "SANDBOX Gaming",
+      "opis" : "SB Summit: \"I'd like to win the season MVP.\"",
+      "text" : "SANDBOX Gaming has secured a spot in the KeSPA Cup finals. The bronze medalists of the LCK Summer Split 2019 ran past T1 in the semi finals with a dominant 3-1 victory. SANDBOX Gaming will face the winner of tomorrow's match between Afreeca Freecs and DragonX, but has already secured a prize of at least ₩20,000,000 (approximately $17,000 USD).",
+      "social" : {
+        "siteLink" : "https://www.sandbox.co.kr/esports",
+        "twitter" : "https://twitter.com/SBGaming_KOR",
+        "instagram" : "https://www.instagram.com/sandboxgaming.official/"
+      }
+    },
+    {
+      "id" : 30,
+      "page" : "t1",
+      "slika" : "assets/images/teams/LCK_team_10.png",
+      "boja" : "redWhite",
+      "kategorija" : {
+                "idKategorija" : "3",
+                "naziv" : "LCK"
+            },
+      "title" : "T1",
+      "opis" : "T1 Faker: \"I believe that I'm currently the best in the LCK.\"",
+      "text" : "The recently rebranded T1 also had a promising performance at the KeSPA Cup, where it debuted a new top laner and jungler. T1 was proactive in the early game, but hesitant in the mid game during the event. That hesitation made them lose games and showed that T1 is lacking a vocal player or shot-caller. This is the first issue that coach Kim \"Kim\" Jeong-soo must address before the start of the season.",
+      "social" : {
+        "siteLink" : "https://t1.gg/",
+        "twitter" : "https://twitter.com/T1LoL",
+        "instagram" : "https://www.instagram.com/t1lol/"
+      }
+    }
+]

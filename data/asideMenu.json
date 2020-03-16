@@ -1,0 +1,167 @@
+[
+    {
+        "id" : 1,
+        "naziv" : "",
+        "href" : "naleague"
+    },
+    {
+        "id" : 1,
+        "naziv" : "tsm",
+        "href" : "tsm"
+    },
+    {
+        "id" : 1,
+        "naziv" : "ggs",
+        "href" : "ggs"
+    },
+    {
+        "id" : 1,
+        "naziv" : "C9",
+        "href" : "c9"
+    },
+    {
+        "id" : 1,
+        "naziv" : "FLY",
+        "href" : "fly"
+    },
+    {
+        "id" : 1,
+        "naziv" : "DIG",
+        "href" : "dig"
+    },
+    {
+        "id" : 1,
+        "naziv" : "IM",
+        "href" : "im"
+    },
+    {
+        "id" : 1,
+        "naziv" : "100",
+        "href" : "100"
+    },
+    {
+        "id" : 1,
+        "naziv" : "TL",
+        "href" : "tl"
+    },
+    {
+        "id" : 1,
+        "naziv" : "EG",
+        "href" : "eg"
+    },
+    {
+        "id" : 1,
+        "naziv" : "CLG",
+        "href" : "clg"
+    },
+    {
+        "id" : 2,
+        "naziv" : "",
+        "href" : "euleague"
+    },
+    {
+        "id" : 2,
+        "naziv" : "S04",
+        "href" : "s04"
+    },
+    {
+        "id" : 2,
+        "naziv" : "FNC",
+        "href" : "fnc"
+    },
+    {
+        "id" : 2,
+        "naziv" : "G2",
+        "href" : "g2"
+    },
+    {
+        "id" : 2,
+        "naziv" : "MAD",
+        "href" : "mad"
+    },
+    {
+        "id" : 2,
+        "naziv" : "MSF",
+        "href" : "msf"
+    },
+    {
+        "id" : 2,
+        "naziv" : "OG",
+        "href" : "og"
+    },
+    {
+        "id" : 2,
+        "naziv" : "RGE",
+        "href" : "rge"
+    },
+    {
+        "id" : 2,
+        "naziv" : "SK",
+        "href" : "sk"
+    },
+    {
+        "id" : 2,
+        "naziv" : "XL",
+        "href" : "xl"
+    },
+    {
+        "id" : 2,
+        "naziv" : "VIT",
+        "href" : "vit"
+    },
+    {
+        "id" : 3,
+        "naziv" : "",
+        "href" : "lckleague"
+    },
+    {
+        "id" : 3,
+        "naziv" : "AF",
+        "href" : "af"
+    },
+    {
+        "id" : 3,
+        "naziv" : "APK",
+        "href" : "apk"
+    },
+    {
+        "id" : 3,
+        "naziv" : "DWG",
+        "href" : "dwg"
+    },
+    {
+        "id" : 3,
+        "naziv" : "DRX",
+        "href" : "drx"
+    },
+    {
+        "id" : 3,
+        "naziv" : "GEN",
+        "href" : "gen"
+    },
+    {
+        "id" : 3,
+        "naziv" : "GRF",
+        "href" : "grf"
+    },
+    {
+        "id" : 3,
+        "naziv" : "HLE",
+        "href" : "hle"
+    },
+    {
+        "id" : 3,
+        "naziv" : "KT",
+        "href" : "kt"
+    },
+    {
+        "id" : 3,
+        "naziv" : "SB",
+        "href" : "sb"
+    },
+    {
+        "id" : 3,
+        "naziv" : "T1",
+        "href" : "t1"
+    }
+]

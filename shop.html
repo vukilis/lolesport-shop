@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html class="pozadinaHeader2">
+<head>
+	<title>League Of Legends eSports</title>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="description" content="Welcome to League Of Legends eSports.">
+	<meta name="keywords" content="shop,lol,fnatic,liquid,esport">
+	<meta name="author" content="Vuk Lekic 351/17"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="assets/images/logo.png" type="image/ico" sizes="128x128">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/semantic.min.css"/>
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+	<script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+	<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+</head>
+<body>
+  <nav class="navbar has-background" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+			<a class="navbar-item logoText" href="index.html">
+        <img src="assets/images/logo.png" alt="logo" width="50" height="50">LoL eSports
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu"> <!-- aktivan -->
+  <!-- navbar start, navbar end -->
+       <div class="navbar-start navbar-item">
+          <!-- navbar items -->
+					<a href="https://www.facebook.com/lolesports/" target="_blank">
+						<i class="fab fa-facebook"></i>
+					</a>
+					<a href="https://twitter.com/lolesports" target="_blank">
+						<i class="fab fa-twitter"></i>
+					</a>
+					<a href="https://www.instagram.com/lolesports/?hl=sr" target="_blank">
+						<i class="fab fa-instagram"></i>
+					</a>
+					<a href="https://www.youtube.com/channel/UCvqRdlKsE5Q8mf8YXbdIJLw" target="_blank">
+						<i class="fab fa-youtube"></i>
+					</a>
+       </div>
+
+       <div class="navbar-end has-text-weight-medium is-uppercase">
+         <!-- navbar items -->
+         <a href="index.html" class="navbar-item is-size-6-desktop is-size-5-mobile is-size-5-tablet">
+           <i class="fa fa-home"></i>
+           Home
+         </a>
+				 <a href="teams.html" class="navbar-item is-size-6-desktop is-size-5-mobile is-size-5-tablet">Teams</a>
+				 <a href="shop.html" class="navbar-item is-size-6-desktop is-size-5-mobile is-size-5-tablet">Shop</a>
+				 <a href="inCart.html" class="navbar-item is-size-6-desktop is-size-5-mobile is-size-5-tablet cart">
+					 <i class="fas fa-shopping-cart"></i>
+					 <span class="count">0</span>
+				 </a>
+       </div>
+    </div>
+  </nav>
+  <section id="prikazIgraca" class="section">
+  <div class="columns">
+  <div class="column">
+      <div class="columns">
+        <div id="kategorijeLige" class="column is-half sakrijKategorije">
+					<button class="tgBtn selected">&raquo;</button>
+					<div id="tgLige" class="kategorijeLigeImena">
+					</div>
+        </div>
+        <div class="column">
+          <nav class="navbar sideNav" role="navigation" aria-label="navigation">
+            <div class="subMenu"> <!-- aktivan -->
+               <div id="navigacijaTimova" class="navbar-start has-text-weight-medium is-uppercase navigacijaTimovaIgraca">
+               </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+  </div>
+  <div class="column is-four-fifths">
+		<div class="dropdown">
+		  <div class="dropdown-trigger">
+		    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu" id="dropdownSort" data-toggle="dropdown">
+		      <span>SORT</span>
+		      <span class="icon is-small">
+		        <i class="fas fa-angle-down" aria-hidden="true"></i>
+		      </span>
+		    </button>
+		  </div>
+		  <div class="dropdown-menu" id="dropdown-menu" role="menu">
+		    <div class="dropdown-content" aria-labelledby="dropdownSort">
+					<a class="dropdown-item sortType" href="#" data-sortby="name" data-order="asc">A to Z</a>
+          <a class="dropdown-item sortType" href="#" data-sortby="name" data-order="desc">Z to A</a>
+					<hr class="dropdown-divider">
+						<a class="dropdown-item sortType" href="#" data-sortby="price" data-order="asc">low to high</a>
+						<a class="dropdown-item sortType" href="#" data-sortby="price" data-order="desc">high to low</a>
+		    </div>
+		  </div>
+		</div>
+		<form id="search-box">
+			<input type="text" placeholder="Search products.." onkeyup="filterProducts()" class="search-txt" id="search">
+		</form>
+      <div id="products" class="card-wrapper">
+      </div>
+  </div>
+  </div>
+  </section>
+	<button id="myBtnScroll" title="TO TOP"></button>
+		 <script src="assets/js/shop.js"></script>
+		 <script src="assets/js/jquery.js"></script>
+  </body>
+</html>

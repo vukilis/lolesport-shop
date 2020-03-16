@@ -1,0 +1,262 @@
+[
+    {
+        "id": 1,
+        "name": "CLG Player Jersey",
+        "slika": {
+            "src": "product1.jpg",
+            "alt" : "product1.jpg"
+        },
+        "timSlika" : {
+          "src": "NA_team_10.png",
+          "alt" : "NA_team_10.png"
+        },
+        "kategorija" : {
+                  "id" : 1,
+                  "naziv" : "JERSEY"
+              },
+        "price": {
+            "new": 49.99,
+            "old": 59.99
+        },
+        "sizes": [
+            {
+                "id": 1,
+                "title" : "XS"
+            }
+        ],
+        "delivery": true,
+        "stars": 3
+    },
+    {
+        "id": 2,
+        "name": "Fnatic Cap",
+        "slika": {
+            "src": "product2.jpg",
+            "alt" : "product2.jpg"
+        },
+        "timSlika" : {
+          "src": "EU_team_2.png",
+          "alt" : "EU_team_2.png"
+        },
+        "kategorija" : {
+                  "id" : 3,
+                  "naziv" : "CAP"
+              },
+        "price": {
+            "new": 25.99,
+            "old": 29.99
+        },
+        "sizes": [
+            {
+                "id": 1,
+                "title" : "XS"
+            },
+            {
+                "id": 2,
+                "title" : "M"
+            }
+        ],
+        "delivery": false,
+        "stars": 4
+    },
+    {
+        "id": 3,
+        "name": "Fnatic T-shirt Orange",
+        "slika": {
+            "src": "product3.jpg",
+            "alt" : "product3.jpg"
+        },
+        "timSlika" : {
+          "src": "EU_team_2.png",
+          "alt" : "EU_team_2.png"
+        },
+        "kategorija" : {
+                  "id" : 2,
+                  "naziv" : "T-SHIRT"
+              },
+        "price": {
+            "new": 19.99,
+            "old": 24.99
+        },
+        "sizes": [
+            {
+                "id": 3,
+                "title" : "XL"
+            }
+        ],
+        "delivery": true,
+        "stars": 5
+    },
+    {
+        "id": 4,
+        "name": "G2 Player Jersey",
+        "slika": {
+            "src": "product4.jpg",
+            "alt" : "product4.jpg"
+        },
+        "timSlika" : {
+          "src": "EU_team_3.png",
+          "alt" : "EU_team_3.png"
+        },
+        "kategorija" : {
+                  "id" : 1,
+                  "naziv" : "JERSEY"
+              },
+        "price": {
+            "new": 52.99,
+            "old": 59.99
+        },
+        "sizes": [
+            {
+                "id": 3,
+                "title" : "XL"
+            },
+            {
+                "id": 2,
+                "title" : "M"
+            }
+        ],
+        "delivery": true,
+        "stars": 5
+    },
+    {
+        "id": 5,
+        "name": "Misfits Player Jersey",
+        "slika": {
+            "src": "product5.jpg",
+            "alt" : "product5.jpg"
+        },
+        "timSlika" : {
+          "src": "EU_team_5.png",
+          "alt" : "EU_team_5.png"
+        },
+        "kategorija" : {
+                  "id" : 1,
+                  "naziv" : "JERSEY"
+              },
+        "price": {
+            "new": 39.99,
+            "old": 49.99
+        },
+        "sizes": [
+            {
+                "id": 2,
+                "title" : "M"
+            }
+        ],
+        "delivery": false,
+        "stars": 2
+    },
+    {
+        "id": 6,
+        "name": "Fnatic T-shirt Black",
+        "slika": {
+            "src": "product8.jpg",
+            "alt" : "product8.jpg"
+        },
+        "timSlika" : {
+          "src": "EU_team_2.png",
+          "alt" : "EU_team_2.png"
+        },
+        "kategorija" : {
+                  "id" : 2,
+                  "naziv" : "T-SHIRT"
+              },
+        "price": {
+            "new": 15.99,
+            "old": 19.99
+        },
+        "sizes": [
+            {
+                "id": 1,
+                "title" : "XS"
+            }
+        ],
+        "delivery": false,
+        "stars": 4
+    },
+    {
+        "id": 7,
+        "name": "Team Liquid T-Shirt",
+        "slika": {
+            "src": "product7.jpg",
+            "alt" : "product7.jpg"
+        },
+        "timSlika" : {
+          "src": "NA_team_8.png",
+          "alt" : "NA_team_8.png"
+        },
+        "kategorija" : {
+                  "id" : 2,
+                  "naziv" : "T-SHIRT"
+              },
+        "price": {
+            "new": 12.99,
+            "old": 21.99
+        },
+        "sizes": [
+            {
+                "id": 2,
+                "title" : "M"
+            }
+        ],
+        "delivery": true,
+        "stars": 5
+    },
+    {
+        "id": 8,
+        "name": "SK Gaming Blue-White",
+        "slika": {
+            "src": "product6.jpg",
+            "alt" : "product6.jpg"
+        },
+        "timSlika" : {
+          "src": "EU_team_8.png",
+          "alt" : "EU_team_8.png"
+        },
+        "kategorija" : {
+                  "id" : 3,
+                  "naziv" : "CAP"
+              },
+        "price": {
+            "new": 15.99,
+            "old": 29.99
+        },
+        "sizes": [
+            {
+                "id": 3,
+                "title" : "XL"
+            }
+        ],
+        "delivery": false,
+        "stars": 3
+    },
+    {
+        "id": 9,
+        "name": "Team Liquid Cap Black",
+        "slika": {
+            "src": "product9.jpg",
+            "alt" : "product9.jpg"
+        },
+        "timSlika" : {
+          "src": "NA_team_8.png",
+          "alt" : "NA_team_8.png"
+        },
+        "kategorija" : {
+                  "id" : 3,
+                  "naziv" : "CAP"
+              },
+        "price": {
+            "new": 29.99,
+            "old": 35.99
+        },
+        "sizes": [
+            {
+                "id": 3,
+                "title" : "XL"
+            }
+        ],
+        "delivery": true,
+        "stars": 4
+    }
+  ]

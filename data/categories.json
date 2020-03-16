@@ -1,0 +1,17 @@
+[
+    {
+        "id" : "1",
+        "naziv" : "LCS",
+        "href" : "lcs"
+    },
+    {
+        "id" : "2",
+        "naziv" : "LEC",
+        "href" : "lec"
+    },
+    {
+        "id" : "3",
+        "naziv" : "LCK",
+        "href" : "lck"
+    }
+]

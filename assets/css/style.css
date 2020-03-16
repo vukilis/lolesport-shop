@@ -418,10 +418,10 @@ body::-webkit-scrollbar-thumb {
   padding: 25px;
   background-color: transparent;
   height: 46px;
-  background-image: url('/assets/images/btnscroll.png');
+  /* background-image: url('/assets/images/btnscroll.png');
   background-position-y: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: contain; */
 }
 
 /* players.html */

@@ -792,7 +792,7 @@ nav .fa-youtube{
   border-radius: 25px;
   font-size: 16px;
   background-color: transparent;
-  background-image: url('/assets/images/searchicon.png');
+  background-image: url('../images/searchicon.png');
   background-position: 10px 8px;
   background-repeat: no-repeat;
   padding: 12px 10px 12px 40px;

@@ -282,7 +282,6 @@ function productsInCart() {
 }
 function addToCart() {
     cartNumbers();
-    // let id = $(this).data("id");
     const id = this.dataset.id;
     var products = productsInCart();
     if(products) {

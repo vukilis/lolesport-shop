@@ -170,7 +170,7 @@ body::-webkit-scrollbar-thumb {
     position: relative;
     z-index: 1;
     box-shadow: 0 0 25px rgba(0,0,0,.11);
-    background: url('assets/images/button.png')no-repeat;
+    background: url('/assets/images/button.png')no-repeat;
     background-size: cover;
     background-color: #000;
 }
@@ -418,7 +418,7 @@ body::-webkit-scrollbar-thumb {
   padding: 25px;
   background-color: transparent;
   height: 46px;
-  background-image: url(/assets/images/btnscroll.png);
+  background-image: url('/assets/images/btnscroll.png');
   background-position-y: center;
   background-repeat: no-repeat;
   background-size: contain;

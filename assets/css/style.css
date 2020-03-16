@@ -418,7 +418,7 @@ body::-webkit-scrollbar-thumb {
   padding: 25px;
   background-color: transparent;
   height: 46px;
-  background-image: url('/backtotop.png');
+  background-image: url('/assets/images/btnscroll.png');
   background-position-y: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -867,6 +867,95 @@ nav .fa-youtube{
   #search-box{
     position: relative;
     top: -4vh;
+  }
+}
+@media screen and (max-width: 360px){
+  .columns{
+    margin-right: 0rem!important;
+  }
+  .team-info{
+    margin-right: 0px;
+    float: none;
+    width: 338px!important;
+  }
+  #timovi{
+    padding-left: 0px;
+    width: 100%;
+  }
+  #prikazTimova h2{
+    font-size: 24px
+  }
+  #prikazTimova h3{
+    font-size: 16px;
+  }
+  #prikazTimova h5{
+    margin: 0 70px 30px 0;
+  }
+  .team-info > p{
+    /* margin: 0px;: 0px 40px 30px 0; */
+    margin: 0px;
+    text-align: justify;
+    position: relative;
+    line-height: 20px!important;
+    position: relative;
+    left: 5px;
+    /* left: -17px; */
+  }
+  .team-logo{
+    position:  sticky;
+  }
+  .team{
+    margin: auto;
+    margin-left: 15px;
+  }
+  #timovi article:nth-child(even) .team .team-info{
+    margin-left: 3px;
+  }
+  .team-logo{
+    margin-top: 0rem!important;
+  }
+  .section{
+    padding: 3rem 0rem;
+  }
+  #kategorijeLige{
+    left: 10px;
+  }
+  #timovi article:first-child{
+    top: -10vh;
+  }
+  .navigacijaTimovaIgraca{
+    right: 8rem;
+  }
+  #search:focus{
+    width: 195px;
+  }
+  #search-box{
+     top: -17vh;
+  }
+  #shopFilt.dropdown{
+    position: relative;
+    left: 6.5rem;
+  }
+  .card2{
+    width: inherit;
+    margin: 0 10px 20px 20px;
+  }
+  #shopSubMenu{
+    position: relative;
+    width: 100%;
+    margin-left: 11px;
+  }
+  #shopSubMenu.sideNav{
+    position: inherit;
+    top: 0;
+    left: 0;
+  }
+  #shopSubMenu #navigacijaTimova{
+    position: inherit;
+  }
+  .chBox{
+    top: -3.5rem;
+    left: 6rem;
   }
 }
 @media screen and (max-width: 1023px){

@@ -25,7 +25,8 @@
             }
         ],
         "delivery": true,
-        "stars": 3
+        "stars": 3,
+        "datum" : "2020-03-26"
     },
     {
         "id": 2,
@@ -57,7 +58,8 @@
             }
         ],
         "delivery": false,
-        "stars": 4
+        "stars": 4,
+        "datum" : "2020-02-31"
     },
     {
         "id": 3,
@@ -85,7 +87,8 @@
             }
         ],
         "delivery": true,
-        "stars": 5
+        "stars": 5,
+        "datum" : "2020-03-21"
     },
     {
         "id": 4,
@@ -117,7 +120,8 @@
             }
         ],
         "delivery": true,
-        "stars": 5
+        "stars": 5,
+        "datum" : "2020-10-8"
     },
     {
         "id": 5,
@@ -145,7 +149,8 @@
             }
         ],
         "delivery": false,
-        "stars": 2
+        "stars": 2,
+        "datum" : "2020-05-17"
     },
     {
         "id": 6,
@@ -173,7 +178,8 @@
             }
         ],
         "delivery": false,
-        "stars": 4
+        "stars": 4,
+        "datum" : "2020-07-23"
     },
     {
         "id": 7,
@@ -201,7 +207,8 @@
             }
         ],
         "delivery": true,
-        "stars": 5
+        "stars": 5,
+        "datum" : "2020-01-31"
     },
     {
         "id": 8,
@@ -229,7 +236,8 @@
             }
         ],
         "delivery": false,
-        "stars": 3
+        "stars": 3,
+        "datum" : "2020-02-01"
     },
     {
         "id": 9,
@@ -257,6 +265,7 @@
             }
         ],
         "delivery": true,
-        "stars": 4
+        "stars": 4,
+        "datum" : "2020-05-05"
     }
   ]

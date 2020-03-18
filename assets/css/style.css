@@ -556,6 +556,7 @@ nav .fa-youtube{
   height: 155vh!important;
 }
 .table{
+  background-color: mintcream;
   width: 100%;
 }
 .input-group{
@@ -615,14 +616,16 @@ nav .fa-youtube{
   text-transform: uppercase;
 }
 .count{
-  position: relative;
-  display: flex;
-  top: -4px;
+  position: absolute;
+  /* display: flex; */
+  top: 12px;
   right: 22px;
   z-index: 999!important;
-  color: #b39556;
+  color: #000;
   font-weight: bold;
   font-size: 14px;
+  width: 27%;
+  text-align: center;
 }
 /* meadia query */
 .icon-success{
@@ -870,6 +873,24 @@ nav .fa-youtube{
   }
 }
 @media screen and (max-width: 360px){
+  #promoImg1 img{
+    left: -29px;
+  }
+  #promoImg2 img{
+    right: 18px;
+  }
+  .btn{
+    height: 7vh;
+  }
+  #promo .column:nth-child(2){
+    margin-top: 0px;
+  }
+  .svg-inline--fa.fa-w-18{
+    height: 4vh;
+  }
+  .svg-inline--fa{
+    vertical-align: 0rem;
+  }
   .columns{
     margin-right: 0rem!important;
   }
@@ -959,6 +980,17 @@ nav .fa-youtube{
   }
 }
 @media screen and (max-width: 1023px){
+  .count{
+    position: relative;
+    top: -6px;
+    right: 31px;
+    z-index: 999!important;
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+    width: 31%;
+    text-align: center;
+  }
   .navbar-menu{
     background-color: #111;
   }
@@ -967,11 +999,6 @@ nav .fa-youtube{
   }
   .navbar-menu.is-active{
     text-align: center;
-  }
-  .count{
-    display: inline-flex;
-    top: -6px;
-    right: 30px;
   }
   .submenu{
     display: none;
@@ -997,4 +1024,31 @@ nav .fa-youtube{
     float: none;
     width: 85%;
   }
+}
+
+
+#totalCost{
+  width: 100%;
+  margin-top: 50px;
+  color: #fff;
+  text-align: right;
+}
+#totalCost .title{
+  display: inline-flex;
+  color: #fff;
+}
+#subtotal{
+  font-size: 24px;
+  margin-left: 10px;
+}
+#removeAll{
+  text-align: right;
+}
+#proceedAll{
+  text-align: center;
+  text-transform: uppercase;
+}
+time{
+  font-size: 16px;
+  font-weight: bold;
 }

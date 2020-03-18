@@ -92,11 +92,11 @@ function printProducts(products){
             </div>
             <div class="content">
               <p class="title is-6">${printDelivery(product.delivery)}</p>
-              <p><span class="title is-4 has-text-success">$${product.price.new}</span> <del class="has-text-danger">$${product.price.old}</del></p>
-              <time datetime="2016-1-1">1 Jan 2016</time>
+              <p><span class="title is-4 has-text-success price">$${product.price.new}</span> <del class="has-text-danger">$${product.price.old}</del></p>
+              <time datetime="2016-1-1">${obradaDatuma(product.datum)}</time>
               <br><br>
               <div class="addToCart">
-                <button data-id=${product.id} href="#" title="Open link" target="_blank" class="btn add-cart btn-content">add to cart</button>
+                <button data-id=${product.id} data-name="${product.name}" data-price="${product.price.new}" href="#" title="Open link" target="_blank" class="btn add-cart btn-content">add to cart</button>
               </div>
             </div>
           </div>
@@ -168,20 +168,12 @@ function printDelivery(delivery){
     return "<i class='has-text-danger	fa fa-car' title='No delivery'></i>";
 }
 
-// filtriranje igraca po imenu i poziciji > search
-function filterProducts(){
-    var value, title, player, i;
-    value = document.getElementById("search").value.toUpperCase();
-    player = document.getElementsByClassName("card2")   ;
-    for(i=0; i<player.length; i++){
-      title = player[i].getElementsByTagName('h2');
-      if(title[0].innerHTML.toUpperCase().indexOf(value) > -1){
-        player[i].style.display="block";
-      }else{
-        player[i].style.display="none";
-      }
+// ispisivanje datuma
+function obradaDatuma(datumString){
+        var datum = new Date(datumString);
+        var meseci = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+        return `${datum.getDate()} / ${meseci[datum.getMonth()]} / ${datum.getFullYear()}`
     }
-};
 
 // sortiranje products
 function onSortProducts(e){
@@ -202,42 +194,13 @@ function sortProducts(products, sortBy, order) {
       else if(valueA < valueB){return order=='asc' ? -1 : 1;}
     });
 }
+
 // dropdown sort button
 let dropdown = document.querySelector('.dropdown');
     dropdown.addEventListener('click', function(event) {
     event.stopPropagation();
     dropdown.classList.toggle('is-active');
 });
-// function clearCart() {
-//     localStorage.removeItem("products");
-// }
-// function addToCart(){
-//   let carts = document.querySelectorAll('.add-cart');
-//   for(let i=0; i<carts.length; i++){
-//     carts[i].addEventListener('click', (e) =>{
-//       e.preventDefault();
-//       cartNumbers();
-//     })
-//   }
-// }
-function onLoadCartNumbers(){
-  let productNumbers = localStorage.getItem('cartNumbers');
-  if(productNumbers){
-    document.querySelector('.cart span').textContent = productNumbers;
-  }
-}
-function cartNumbers(){
-  let productNumbers = localStorage.getItem('cartNumbers');
-  console.log(productNumbers);
-  productNumbers = parseInt(productNumbers);
-  if(productNumbers){
-    localStorage.setItem('cartNumbers', productNumbers + 1);
-    document.querySelector('.cart span').textContent = productNumbers + 1;
-  }else{
-    localStorage.setItem('cartNumbers', 1);
-    document.querySelector('.cart span').textContent = 1;
-  }
-}
 
 // LOCAL STORAGE
 function sortByRemembered(products){
@@ -264,21 +227,24 @@ function rememberFilt(idCategory){
     setStorage({ idCategory: idCategory});
 }
 
-/* HELP FUNKCIJE */
-// sort
-function getStorage(){
-    return JSON.parse(localStorage.getItem('sort'));
-}
-function setStorage(value){
-    return localStorage.setItem('sort', JSON.stringify(value));
-}
-function isEmptyStorage(){
-    return localStorage.getItem('sort') === null;
-}
-
 // add to cart button
-function productsInCart() {
-    return JSON.parse(localStorage.getItem("products"));
+function onLoadCartNumbers(){
+  let productNumbers = localStorage.getItem('cartNumbers');
+  if(productNumbers){
+    document.querySelector('.cart span').textContent = productNumbers;
+  }
+}
+function cartNumbers(){
+  let productNumbers = localStorage.getItem('cartNumbers');
+  console.log(productNumbers);
+  productNumbers = parseInt(productNumbers);
+  if(productNumbers){
+    localStorage.setItem('cartNumbers', productNumbers + 1);
+    document.querySelector('.cart span').textContent = productNumbers + 1;
+  }else{
+    localStorage.setItem('cartNumbers', 1);
+    document.querySelector('.cart span').textContent = 1;
+  }
 }
 function addToCart() {
     cartNumbers();
@@ -324,4 +290,17 @@ function addToCart() {
         };
         localStorage.setItem("products", JSON.stringify(products));
     }
+}
+
+function productsInCart() {
+    return JSON.parse(localStorage.getItem("products"));
+}
+function getStorage(){
+    return JSON.parse(localStorage.getItem('sort'));
+}
+function setStorage(value){
+    return localStorage.setItem('sort', JSON.stringify(value));
+}
+function isEmptyStorage(){
+    return localStorage.getItem('sort') === null;
 }

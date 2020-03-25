@@ -830,7 +830,7 @@ aside{
     margin-top: 5rem;
   }
   .borderImg{
-    top: 59.5vh!important;
+    /* top: 59.5vh!important; */
   }
 }
 /* @media screen and (max-width: 1280px){
@@ -858,8 +858,8 @@ aside{
   }
   .borderImg{
     width: 328px!important;
-    top: 77.4vh!important;
-    left: -12px!important;
+    /* top: 77.4vh!important;
+    left: -12px!important; */
   }
   #promoImg1 img{
     left: -29px;
@@ -1161,10 +1161,14 @@ input[type=range]:focus::-ms-fill-upper {
 .borderImg{
   border: 0px solid transparent;
   position: absolute;
-  top: 56vh;
+  /* top: 56vh; */
   left: -6px;
   max-width: 363px;
   background-size: inherit;
+}
+.borderImgWrap{
+  position: relative;
+  top: -26px;
 }
 .card2{
   position: relative;

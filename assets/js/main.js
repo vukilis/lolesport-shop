@@ -13,7 +13,7 @@ let newsletter = document.querySelector('#newsletter'),
             // c = document.querySelector('#newsletter');
             b.test(a) ? newsletter.classList.add('icon-success') : newsletter.classList.add('icon-danger');
          };
-let msg = alertify.message('Welcome to League Of legends eSports!');
+let msg = alertify.message('Welcome to League Of Legends eSports!');
 msg.delay(3);
 
 porukaNews = (removeClasses) =>{

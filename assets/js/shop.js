@@ -3,7 +3,19 @@ $(document).ready(function(){
     showTypes();
     showSizes();
     onLoadCartNumbers();
-    $(".sortType").click(onSortProducts);
+    $("#productSort").change(onSortProducts);
+    readMore();
+    setTimeout(() => {
+       alertify.prompt('eSports Survey', 'What is your favourite team?', '', (evt, value) => {
+         if (value != "") {
+           alertify.notify('Thank you :)  ', 'customSuccess', 2)
+         } else {
+           alertify.notify('Ah :( okay, next time', 'customDanger', 2)
+         }
+       }, () => {
+         alertify.notify('Ah :( okay, next time', 'customDanger', 2)
+       })
+    }, 10)
 });
 // ISPISIVANJE I PRIKAZIVANJE MENIJA TYPES
 function ajaxTypes(){
@@ -21,7 +33,7 @@ function showTypes() {
         });
 }
 function printTypes(types){
-  let ispis = "<ul>";
+  let ispis = "";
   types.forEach(type => {
     if(filterCategories == type.href){
     ispis += `<li><a href="#${type.href}" class="aktivan" data-kategorijeID="${type.id}">${type.naziv}</a></li>`;
@@ -29,9 +41,8 @@ function printTypes(types){
     ispis += `<li><a href="#${type.href}" data-kategorijeID="${type.id}">${type.naziv}</a></li>`;
   }
   });
-  ispis += "</ul>";
-  document.getElementById("tgLige").innerHTML = ispis;
-  $("#tgLige ul li a").click(filterCategories);
+  document.getElementById("typeProducts").innerHTML = ispis;
+  $("#typeProducts li a").click(filterCategories);
 }
 // ISPISIVANJE I PRIKAZIVANJE SIZES
 function showSizes(){
@@ -51,7 +62,7 @@ function printSizes(sizes){
               <input type="checkbox" class="sizeType" value="${size.id}"> <span class="text">${size.title}</span>
               </label>`
   });
-  document.getElementById("navigacijaTimova").innerHTML = ispis;
+  document.getElementById("chBoxProducts").innerHTML = ispis;
   $('.sizeType').click(filterBySizes);
 }
 // ISPISIVANJE I PRIKAZIVANJE PRODUCTS
@@ -62,16 +73,16 @@ function ajaxProducts(callbackSuccess){
         success: callbackSuccess
     });
 }
+
 function showProducts() {
     ajaxProducts(function(products){
-            filtByRemembered(products);
             sortByRemembered(products);
             printProducts(products);
         });
 }
 function printProducts(products){
   let ispis = "";
-    products.forEach(product => {
+    products.slice(0, 3).forEach(product => {
         ispis += `<div class="card2">
           <div class="card-image">
             <figure class="image is-4by3">
@@ -92,7 +103,7 @@ function printProducts(products){
             </div>
             <div class="content">
               <p class="title is-6">${printDelivery(product.delivery)}</p>
-              <p><span class="title is-4 has-text-success price">$${product.price.new}</span> <del class="has-text-danger">$${product.price.old}</del></p>
+              <p><span class="title is-4 has-text-success price">$${product.price.new}</span> <del class="has-text-danger">${obradaCene(product.price.old)}</del></p>
               <time datetime="2016-1-1">${obradaDatuma(product.datum)}</time>
               <br><br>
               <div class="addToCart">
@@ -100,54 +111,19 @@ function printProducts(products){
               </div>
             </div>
           </div>
+          <img src="assets/images/${product.sale.src}" class="borderImg"/>
         </div>`
     });
     document.getElementById("products").innerHTML = ispis;
-    $(".add-cart").click(addToCart);
+    // $(".add-cart").click(addToCart);
 }
-// filtriranje po kategoriji type
-function filterCategories(e){
- e.preventDefault();
- const idCategory = this.dataset.kategorijeid;
- rememberFilt(idCategory);
- ajaxProducts(function(products){
-    products = filterCategory(products, idCategory);
-    printProducts(products);
- });
-}
-function filterCategory(products, idCategory){
-    return products.filter(product => product.kategorija.id == idCategory);
-}
-// filtriranje po kategoriji size
-function filterBySizes(){
-    let chBox = $('.sizeType:checked')
-    let chSizes = [];
-    for(let i of chBox){
-      chSizes.push(parseInt(i.value));
-    }
-    ajaxProducts(function(products){
-        if(chSizes.length>0){
-          products = filterBySize(products, chSizes);
-        }
-        printProducts(products);
-    })
-}
-function filterBySize(products, chSizes){
-    return products.filter( product => {
-        let sizes = product.sizes.map(product => product.id);
-        let showProduct = true;
-        for(let size of chSizes){
-            if(!inArray(sizes, size)){
-              showProduct = false;
-              return;
-            }
-        }
-        return showProduct;
-    })
-}
-// array funkcija
-function inArray(array, el){
-    return array.indexOf(el)!==-1;
+// obrada cene
+function obradaCene(cena){
+  if(cena == ""){
+    return ""
+  }else{
+    return "$" + cena;
+  }
 }
 // ispisivanje stars
 function printStars(stars){
@@ -170,61 +146,153 @@ function printDelivery(delivery){
 
 // ispisivanje datuma
 function obradaDatuma(datumString){
-        var datum = new Date(datumString);
-        var meseci = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-        return `${datum.getDate()} / ${meseci[datum.getMonth()]} / ${datum.getFullYear()}`
-    }
+  var datum = new Date(datumString);
+  var meseci = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+  return `${datum.getDate()} / ${meseci[datum.getMonth()]} / ${datum.getFullYear()}`
+}
 
-// sortiranje products
+// ***** FILTRIRANJE *****
+// filtriranje po kategoriji type
+function filterCategories(e){
+ e.preventDefault();
+ const idCategory = this.dataset.kategorijeid;
+ ajaxProducts(function(products){
+    products = filterCategory(products, idCategory);
+    printProducts(products);
+    productsMore(products);
+ });
+}
+function filterCategory(products, idCategory){
+    return products.filter(product => product.kategorija.id == idCategory);
+}
+// filtriranje po kategoriji size
+function filterBySizes(){
+    let chBox = $('.sizeType:checked')
+    let chSizes = [];
+    for(let i of chBox){
+      chSizes.push(parseInt(i.value));
+    }
+    ajaxProducts(function(products){
+        if(chSizes.length>0)
+          products = filtBySize(products, chSizes);
+          printProducts(products);
+          productsMore(products);
+    })
+}
+function filtBySize(products, chSizes){
+    return products.filter( product => {
+        let sizes = product.sizes.map(product => product.id);
+        let showProduct = true;
+        for(let size of chSizes){
+            if(!inArray(sizes, size)){
+              showProduct = false;
+              return;
+            }
+        }
+        return showProduct;
+    })
+}
+// array funkcija
+function inArray(array, el){
+    return array.indexOf(el)!==-1;
+}
+// filtriranje itema po imenu > search
+function filterProducts(){
+  var value, title, product, i;
+  value = document.getElementById("search").value.toUpperCase();
+  product = document.getElementsByClassName("card2")   ;
+  for(i=0; i<product.length; i++){
+    title = product[i].getElementsByTagName('h2');
+    if(title[0].innerHTML.toUpperCase().indexOf(value) > -1){
+      product[i].style.display="inline-block";
+    }else{
+      product[i].style.display="none";
+    }
+  }
+};
+// filtriranje po price range
+function priceRange() {
+  let val = $("#priceRange").val();
+  document.getElementById("hprice").innerHTML = val + "$";
+  ajaxProducts(function(products){
+     products = filterPriceRange(products);
+   })
+}
+function filterPriceRange(products) {
+    let val = $("#priceRange").val();
+    price = products.filter(p => {
+      return parseFloat(p.price.new) >= 0 && parseFloat(p.price.new) <= val
+    })
+    printProducts(price);
+    productsMore(price);
+}
+// ***** SORTIRANJE *****
+// sortiranje
 function onSortProducts(e){
     e.preventDefault();
-    let sortBy = this.dataset.sortby;
-    let order = this.dataset.order;
-    rememberSort(sortBy, order);
+    let val = this.value;
+    rememberSort(val);
     ajaxProducts(function(products){
-        sortProducts(products, sortBy, order);
+        sortProducts(products, val);
         printProducts(products);
+        productsMore(products);
     });
 }
-function sortProducts(products, sortBy, order) {
-    products.sort(function(a,b){
-      let valueA = (sortBy=='price') ? a.price.new : a.name;
-      let valueB = (sortBy=='price') ? b.price.new : b.name;
-      if(valueA > valueB){return order=='asc' ? 1 : -1;}
-      else if(valueA < valueB){return order=='asc' ? -1 : 1;}
-    });
+function sortProducts(products, val) {
+  if (val == 1) {
+      products.sort((a, b) => {
+        let naslov1 = a.name;
+        let naslov2 = b.name;
+        return naslov1 > naslov2 ? 1 : -1;
+      })}
+   else if (val == 2) {
+       products.sort((a, b) =>{
+         let naslov1 = a.name;
+         let naslov2 = b.name;
+         return naslov1 < naslov2 ? 1 : -1;
+       })}
+   else if (val == 3) {
+       products.sort((a, b) =>{
+           if (parseFloat(a.price.new) > parseFloat(b.price.new)) { return 1 }
+           else if (parseFloat(a.price.new) < parseFloat(b.price.new)) { return -1 }
+           return 0
+       })
+   }
+   else if (val == 4) {
+       products.sort((a, b) =>{
+           if (parseFloat(a.price.new) < parseFloat(b.price.new)) { return 1 }
+           else if (parseFloat(a.price.new) > parseFloat(b.price.new)) { return -1 }
+           return 0
+       })
+   }
+   else if (val == 5) {
+       products.sort((a, b) =>{
+           if (Date.parse(a.datum) < Date.parse(b.datum)) { return 1 }
+           else if (Date.parse(a.datum) > Date.parse(b.datum)) { return -1 }
+           return 0
+       })
+   }
+   else if (val == 6) {
+       products.sort((a, b) =>{
+           if (Date.parse(a.datum) > Date.parse(b.datum)) { return 1 }
+           else if (Date.parse(a.datum) < Date.parse(b.datum)) { return -1 }
+           return 0
+       })
+   }
 }
 
-// dropdown sort button
-let dropdown = document.querySelector('.dropdown');
-    dropdown.addEventListener('click', function(event) {
-    event.stopPropagation();
-    dropdown.classList.toggle('is-active');
-});
-
-// LOCAL STORAGE
+// localStorage
 function sortByRemembered(products){
     if(!isEmptyStorage()){
-        let selection = getStorage();
+        let selection = getStorageSort();
         if(!isEmptyStorage()){
-            sortProducts(products, selection.sortBy, selection.order);
+            sortProducts(products, selection.val);
+            printProducts(products);
         }
     }
 }
-function rememberSort(sortBy, order){
-    setStorage({ sortBy: sortBy, order: order});
-}
-
-function filtByRemembered(products){
-    if(!isEmptyStorage()){
-        let selection = getStorage();
-        if(!isEmptyStorage()){
-            filterCategory(products, selection.idCategory);
-        }
-    }
-}
-function rememberFilt(idCategory){
-    setStorage({ idCategory: idCategory});
+function rememberSort(val){
+    setStorageSort({ val: val});
 }
 
 // add to cart button
@@ -253,13 +321,14 @@ function addToCart() {
     if(products) {
         if(productIsAlreadyInCart()) {
             updateQuantity();
+            alertify.message('Cart successfully updated!');
         } else {
-            addToLocalStorage()
+            addToLocalStorage();
         }
     } else {
         addFirstItemToLocalStorage();
+        alertify.message('Item successfully added to your cart!');
     }
-    alertify.message('Cart successfully updated!');
     function productIsAlreadyInCart() {
         return products.filter(x => x.id == id).length;
     }
@@ -292,15 +361,75 @@ function addToCart() {
     }
 }
 
+// LOCAL STORAGE SET AND GET
+// products
 function productsInCart() {
     return JSON.parse(localStorage.getItem("products"));
 }
-function getStorage(){
+// sort
+function getStorageSort(){
     return JSON.parse(localStorage.getItem('sort'));
 }
-function setStorage(value){
+function setStorageSort(value){
     return localStorage.setItem('sort', JSON.stringify(value));
 }
+// empty
 function isEmptyStorage(){
     return localStorage.getItem('sort') === null;
+}
+
+// *********************************************************************************************************
+function readMore(){
+  $('.moreless-button').click(function() {
+    $('#moreProducts').slideToggle();
+    if ($('.moreless-button').text() == "Read more") {
+      $(this).text("Read less")
+    } else {
+      $(this).text("Read more")
+    }
+  });
+  ajaxProducts(function(products){
+     products = filterMore(products);
+   })
+}
+function filterMore(products){
+    productsMore(products);
+}
+
+function productsMore(products){
+  let ispis = "";
+    products.slice(3, 9).forEach(product => {
+        ispis += `<div class="card2">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="assets/images/products/${product.slika.src}" alt="${product.slika.alt}">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-48x48">
+                  <img src="assets/images/teams/${product.timSlika.src}" alt="${product.timSlika.alt}">
+                </figure>
+              </div>
+              <div class="media-content">
+                <h2 class="title is-4">${product.name}</h2>
+                <p class="subtitle is-4">${printStars(product.stars)}</p>
+              </div>
+            </div>
+            <div class="content">
+              <p class="title is-6">${printDelivery(product.delivery)}</p>
+              <p><span class="title is-4 has-text-success price">$${product.price.new}</span> <del class="has-text-danger">${obradaCene(product.price.old)}</del></p>
+              <time datetime="2016-1-1">${obradaDatuma(product.datum)}</time>
+              <br><br>
+              <div class="addToCart">
+                <button data-id=${product.id} data-name="${product.name}" data-price="${product.price.new}" href="#" title="Open link" target="_blank" class="btn add-cart btn-content">add to cart</button>
+              </div>
+            </div>
+          </div>
+          <img src="assets/images/${product.sale.src}" class="borderImg"/>
+        </div>`
+    });
+    document.getElementById("moreProducts").innerHTML = ispis;
+    $(".add-cart").click(addToCart);
 }

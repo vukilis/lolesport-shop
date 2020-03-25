@@ -16,7 +16,7 @@
               },
         "price": {
             "new": 49.99,
-            "old": 59.99
+            "old": ""
         },
         "sizes": [
             {
@@ -26,7 +26,11 @@
         ],
         "delivery": true,
         "stars": 3,
-        "datum" : "2020-03-26"
+        "datum" : "2020-03-26",
+        "sale" :{
+          "saleOn": false,
+          "src" : "borderImg.png"
+        }
     },
     {
         "id": 2,
@@ -59,7 +63,11 @@
         ],
         "delivery": false,
         "stars": 4,
-        "datum" : "2020-02-31"
+        "datum" : "2020-02-31",
+        "sale" :{
+          "saleOn": true,
+          "src" : "borderImgGreen.png"
+        }
     },
     {
         "id": 3,
@@ -88,7 +96,11 @@
         ],
         "delivery": true,
         "stars": 5,
-        "datum" : "2020-03-21"
+        "datum" : "2020-03-21",
+        "sale" :{
+          "saleOn": true,
+          "src" : "borderImgGreen.png"
+        }
     },
     {
         "id": 4,
@@ -121,7 +133,11 @@
         ],
         "delivery": true,
         "stars": 5,
-        "datum" : "2020-10-8"
+        "datum" : "2020-10-8",
+        "sale" :{
+          "saleOn": true,
+          "src" : "borderImgGreen.png"
+        }
     },
     {
         "id": 5,
@@ -140,7 +156,7 @@
               },
         "price": {
             "new": 39.99,
-            "old": 49.99
+            "old": ""
         },
         "sizes": [
             {
@@ -150,7 +166,11 @@
         ],
         "delivery": false,
         "stars": 2,
-        "datum" : "2020-05-17"
+        "datum" : "2020-05-17",
+        "sale" :{
+          "saleOn": true,
+          "src" : "borderImg.png"
+        }
     },
     {
         "id": 6,
@@ -179,7 +199,11 @@
         ],
         "delivery": false,
         "stars": 4,
-        "datum" : "2020-07-23"
+        "datum" : "2020-07-23",
+        "sale" :{
+          "saleOn": true,
+          "src" : "borderImgGreen.png"
+        }
     },
     {
         "id": 7,
@@ -198,7 +222,7 @@
               },
         "price": {
             "new": 12.99,
-            "old": 21.99
+            "old": ""
         },
         "sizes": [
             {
@@ -208,11 +232,15 @@
         ],
         "delivery": true,
         "stars": 5,
-        "datum" : "2020-01-31"
+        "datum" : "2020-01-31",
+        "sale" :{
+          "saleOn": true,
+          "src" : "borderImg.png"
+        }
     },
     {
         "id": 8,
-        "name": "SK Gaming Blue-White",
+        "name": "SK Gaming Blue",
         "slika": {
             "src": "product6.jpg",
             "alt" : "product6.jpg"
@@ -237,11 +265,15 @@
         ],
         "delivery": false,
         "stars": 3,
-        "datum" : "2020-02-01"
+        "datum" : "2020-02-01",
+        "sale" :{
+          "saleOn": true,
+          "src" : "borderImgGreen.png"
+        }
     },
     {
         "id": 9,
-        "name": "Team Liquid Cap Black",
+        "name": "Team Liquid Black",
         "slika": {
             "src": "product9.jpg",
             "alt" : "product9.jpg"
@@ -256,7 +288,7 @@
               },
         "price": {
             "new": 29.99,
-            "old": 35.99
+            "old": ""
         },
         "sizes": [
             {
@@ -266,6 +298,10 @@
         ],
         "delivery": true,
         "stars": 4,
-        "datum" : "2020-05-05"
+        "datum" : "2020-05-05",
+        "sale" :{
+          "saleOn": true,
+          "src" : "borderImg.png"
+        }
     }
   ]

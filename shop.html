@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="pozadinaHeader2">
+<html class="pozadina2">
 <head>
 	<title>League Of Legends eSports</title>
 	<meta charset="utf-8"/>
@@ -67,55 +67,66 @@
        </div>
     </div>
   </nav>
-  <section id="prikazIgraca" class="section">
-  <div class="columns">
-  <div class="column">
-      <div class="columns">
-        <div id="kategorijeLige" class="column is-half sakrijKategorije">
-					<button class="tgBtn selected">&raquo;</button>
-					<div id="tgLige" class="kategorijeLigeImena">
-					</div>
-        </div>
-        <div class="column">
-          <nav id="shopSubMenu" class="navbar sideNav" role="navigation" aria-label="navigation">
-            <div class="subMenu"> <!-- aktivan -->
-               <div id="navigacijaTimova" class="navbar-start has-text-weight-medium is-uppercase navigacijaTimovaIgraca">
-               </div>
-            </div>
-          </nav>
-        </div>
-      </div>
-  </div>
-  <div class="column is-four-fifths">
-		<div id="shopFilt" class="dropdown">
-		  <div class="dropdown-trigger">
-		    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu" id="dropdownSort" data-toggle="dropdown">
-		      <span>SORT</span>
-		      <span class="icon is-small">
-		        <i class="fas fa-angle-down" aria-hidden="true"></i>
-		      </span>
-		    </button>
-		  </div>
-		  <div class="dropdown-menu" id="dropdown-menu" role="menu">
-		    <div class="dropdown-content" aria-labelledby="dropdownSort">
-					<a class="dropdown-item sortType" href="#" data-sortby="name" data-order="asc">A to Z</a>
-          <a class="dropdown-item sortType" href="#" data-sortby="name" data-order="desc">Z to A</a>
-					<hr class="dropdown-divider">
-						<a class="dropdown-item sortType" href="#" data-sortby="price" data-order="asc">low to high</a>
-						<a class="dropdown-item sortType" href="#" data-sortby="price" data-order="desc">high to low</a>
-		    </div>
-		  </div>
-		</div>
-		<form id="search-box">
-			<input type="text" placeholder="Search products.." onkeyup="filterProducts()" class="search-txt" id="search">
-		</form>
-      <div id="products" class="card-wrapper">
-      </div>
-  </div>
-  </div>
-	<!-- Modal -->
+  <section class="main-content columns is-fullheight">
 
-  </section>
+  <aside class="column is-size-6-desktop is-size-5-mobile is-size-5-tablet is-narrow-mobile is-fullheight section">
+    <p class="menu-label">Search</p>
+    <form id="search-box">
+			<input type="text" placeholder="Search..." onkeyup="filterProducts()" class="search-txt" id="search">
+		</form>
+    <hr>
+    <p class="menu-label">Filter</p>
+    <ul id="typeProducts">
+
+    </ul>
+    <div id="chBoxProducts">
+    </div>
+		<p class="menu-label">Price</p>
+		<input class="slider" name="sliderPriceInput" step="1" min="0" max="100" value="50" type="range" oninput="priceRange()" id="priceRange">
+    <div class="priceOutputRange level is-mobile">
+			<div class="level-left">
+			 <div class="level-item">
+        <p class="subtitle is-5">
+          <output class="leftPrice">0$</output>
+        </p>
+		   </div>
+      </div>
+			<div class="level-item">
+       <div>
+         <p class="subtitle is-5">-</p>
+       </div>
+      </div>
+			<div class="level-right">
+			 <div class="level-item">
+        <p class="subtitle is-5">
+          <output class="rightPrice" for="sliderPrice"id="hprice">100$</output>
+        </p>
+		   </div>
+      </div>
+    </div>
+    <hr>
+    <p class="menu-label">Sort</p>
+    <select class="custom-select mt-2 mb-2" id="productSort">
+      <option value="0" selected="">Sort By...</option>
+      <option value="1">A-Z</option>
+      <option value="2">Z-A</option>
+      <option value="3">Price Ascending</option>
+      <option value="4">Price Descending</option>
+      <option value="5">Oldest</option>
+      <option value="6">Newest</option>
+    </select>
+			<img src="assets/images/payment-icons2.png" alt="payment" class="imgPayment">
+  </aside>
+
+  <div class="container column is-10" id="productWrap">
+    <div id="products">
+    </div>
+		<div id="moreProducts">
+    </div>
+	  <button class="moreless-button btn btn-content">Read more</button>
+  </div>
+
+</section>
 	<button id="myBtnScroll" title="TO TOP"></button>
 		 <script src="assets/js/shop.js"></script>
 		 <script src="assets/js/jquery.js"></script>

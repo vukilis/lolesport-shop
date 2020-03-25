@@ -63,7 +63,7 @@
         ],
         "delivery": false,
         "stars": 4,
-        "datum" : "2020-02-31",
+        "datum" : "2020-02-28",
         "sale" :{
           "saleOn": true,
           "src" : "borderImgGreen.png"

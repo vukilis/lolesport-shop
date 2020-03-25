@@ -829,6 +829,14 @@ aside{
   .card2{
     margin-top: 5rem;
   }
+  .borderImg{
+    top: 60vh!important;
+  }
+}
+@media screen and (max-width: 1280px){
+  .borderImg{
+    top: 66vh!important;
+  }
 }
 @media screen and (min-width: 769px){
   .is-size-5-tablet {

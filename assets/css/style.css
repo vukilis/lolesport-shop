@@ -830,14 +830,14 @@ aside{
     margin-top: 5rem;
   }
   .borderImg{
-    top: 60vh!important;
+    top: 59.5vh!important;
   }
 }
-@media screen and (max-width: 1280px){
+/* @media screen and (max-width: 1280px){
   .borderImg{
     top: 66vh!important;
   }
-}
+} */
 @media screen and (min-width: 769px){
   .is-size-5-tablet {
     padding-left: 2rem!important;

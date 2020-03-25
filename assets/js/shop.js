@@ -110,8 +110,10 @@ function printProducts(products){
                 <button data-id=${product.id} data-name="${product.name}" data-price="${product.price.new}" href="#" title="Open link" target="_blank" class="btn add-cart btn-content">add to cart</button>
               </div>
             </div>
-          </div><div class="borderImgWrap">
-          <img src="assets/images/${product.sale.src}" class="borderImg"/></div>
+          </div>
+          <div class="borderImgWrap">
+           <img src="assets/images/${product.sale.src}" class="borderImg"/>
+          </div>
         </div>`
     });
     document.getElementById("products").innerHTML = ispis;
@@ -427,7 +429,9 @@ function productsMore(products){
               </div>
             </div>
           </div>
-          <img src="assets/images/${product.sale.src}" class="borderImg"/>
+          <div class="borderImgWrap">
+           <img src="assets/images/${product.sale.src}" class="borderImg"/>
+          </div>
         </div>`
     });
     document.getElementById("moreProducts").innerHTML = ispis;

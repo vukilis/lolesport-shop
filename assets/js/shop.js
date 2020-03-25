@@ -111,7 +111,6 @@ function printProducts(products){
               </div>
             </div>
           </div>
-          <img src="assets/images/${product.sale.src}" class="borderImg"/>
         </div>`
     });
     document.getElementById("products").innerHTML = ispis;
@@ -427,7 +426,6 @@ function productsMore(products){
               </div>
             </div>
           </div>
-          <img src="assets/images/${product.sale.src}" class="borderImg"/>
         </div>`
     });
     document.getElementById("moreProducts").innerHTML = ispis;

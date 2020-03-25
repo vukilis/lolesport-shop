@@ -1,6 +1,11 @@
 *, *:before, *:after {
     box-sizing: inherit;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
+/* ************************************************************** */
 html {
     height: 100%;
     box-sizing: border-box;

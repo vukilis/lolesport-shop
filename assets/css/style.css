@@ -1177,5 +1177,24 @@ input[type=range]:focus::-ms-fill-upper {
   margin-top: 5rem;
 }
 .moreless-button{
-  margin-top: 5rem
+  margin-top: 5rem;
+  margin-bottom: 5.3rem;
+}
+
+/* Prelaoder */
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
+  background-image: url('/assets/images/preloader.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 1
 }

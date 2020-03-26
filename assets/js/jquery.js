@@ -1,4 +1,12 @@
-//alertify
+//preload
+$(window).on('load', function () {
+  if ($('#preloader').length) {
+    $('#preloader').delay(1000).fadeOut('slow', function () {
+			$(this).remove();
+    });
+  }
+});
+
 
 // aktivan on scroll
 $(window).scroll(function() {
@@ -14,10 +22,8 @@ $(window).scroll(function() {
 // scrollToTop
 $('#myBtnScroll').hide();
 var scrollTop = $("#myBtnScroll");
-// var scrollTop = $(".tgBtn");
 $(window).scroll(function() {
  $('#myBtnScroll').show();
- // $('.sakrijKategorije').show();
  var topPos = $(this).scrollTop();
 
  // prikaz topTop

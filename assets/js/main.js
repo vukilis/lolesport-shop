@@ -10,7 +10,6 @@ let newsletter = document.querySelector('#newsletter'),
         newsletterValidatation = () => {
         let a = newsletter.value,
             b = /^[a-zšđžćč]{4,}(\.)?[a-zšđžćč]{4,}([0-9]{0,5})?\@((gmail)|(outlook)|(msn)|(live)|(hotmail)|(yahoo)|\w)\.com$/;
-            // c = document.querySelector('#newsletter');
             b.test(a) ? newsletter.classList.add('icon-success') : newsletter.classList.add('icon-danger');
          };
 let msg = alertify.message('Welcome to League Of Legends eSports!');

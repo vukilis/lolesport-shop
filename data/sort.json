@@ -1,0 +1,30 @@
+[
+  {
+    "id" : 0,
+    "name": "Sort By..."
+  },
+  {
+    "id" : 1,
+    "name": "A-Z"
+  },
+  {
+    "id" : 2,
+    "name": "Z-A"
+  },
+  {
+    "id" : 3,
+    "name": "Price Ascending"
+  },
+  {
+    "id" : 4,
+    "name": "Price Descending"
+  },
+  {
+    "id" : 5,
+    "name": "Newest"
+  },
+  {
+    "id" : 6,
+    "name": "Oldest"
+  }
+]

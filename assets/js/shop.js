@@ -2,6 +2,7 @@ $(document).ready(function(){
     showProducts();
     showTypes();
     showSizes();
+    showSort();
     onLoadCartNumbers();
     $("#productSort").change(onSortProducts);
     readMore();
@@ -64,6 +65,24 @@ function printSizes(sizes){
   });
   document.getElementById("chBoxProducts").innerHTML = ispis;
   $('.sizeType').click(filterBySizes);
+}
+// ISPISIVANJE I PRIKAZIVANJE SORT
+function showSort(){
+    $.ajax({
+        url: "data/sort.json",
+        method: "GET",
+        success: function(sort){
+            printSort(sort);
+        }
+    })
+}
+
+function printSort(sort){
+  let ispis = "";
+  sort.forEach(sort => {
+    ispis += `<option value="${sort.id}">${sort.name}</option>`
+  });
+  document.getElementById("productSort").innerHTML = ispis;
 }
 // ISPISIVANJE I PRIKAZIVANJE PRODUCTS
 function ajaxProducts(callbackSuccess){
@@ -230,6 +249,7 @@ function filterPriceRange(products) {
 }
 // ***** SORTIRANJE *****
 // sortiranje
+
 function onSortProducts(e){
     e.preventDefault();
     let val = this.value;

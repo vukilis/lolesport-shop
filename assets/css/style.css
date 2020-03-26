@@ -297,7 +297,7 @@ body::-webkit-scrollbar-thumb {
   background: transparent;
 }
 .pozadina{
-  background-image: url('../images/parallax-back.png'), url('/assets/images/parallax-deep.png');
+  background-image: url('../images/parallax-back.png'), url('../images/parallax-deep.png');
   background-position: left top, center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -311,7 +311,7 @@ body::-webkit-scrollbar-thumb {
   background-size: contain;
 }
 .pozadina2{
-  background-image: url('../images/header-bg.png'), url('/assets/images/parallax-back.png'), url('/assets/images/parallax-deep.png');
+  background-image: url('../images/header-bg.png'), url('../images/parallax-back.png'), url('../images/parallax-deep.png');
   background-position: left top, center top;
   background-repeat: no-repeat;
   background-size: cover;

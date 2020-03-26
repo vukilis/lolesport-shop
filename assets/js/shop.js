@@ -222,7 +222,7 @@ function inArray(array, el){
 function filterProducts(){
   var value, title, product, i;
   value = document.getElementById("search").value.toUpperCase();
-  product = document.getElementsByClassName("card2")   ;
+  product = document.getElementsByClassName("card2");
   for(i=0; i<product.length; i++){
     title = product[i].getElementsByTagName('h2');
     if(title[0].innerHTML.toUpperCase().indexOf(value) > -1){
@@ -402,7 +402,7 @@ function isEmptyStorage(){
     return localStorage.getItem('sort') === null;
 }
 
-// *********************************************************************************************************
+// SHOW MORE PRODUCTS
 function readMore(){
   $('.moreless-button').click(function() {
     $('#moreProducts').slideToggle();

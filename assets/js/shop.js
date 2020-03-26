@@ -15,7 +15,7 @@ $(document).ready(function(){
        }, () => {
          alertify.notify('Ah :( okay, next time', 'customDanger', 2)
        })
-    }, 10)
+    }, 10000)
 });
 // ISPISIVANJE I PRIKAZIVANJE MENIJA TYPES
 function ajaxTypes(){

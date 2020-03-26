@@ -616,14 +616,19 @@ aside{
 }
 .count{
   position: absolute;
-  top: 12px;
-  right: 19px;
+  /* top: 12px; */
+  /* right: 19px; */
   z-index: 999!important;
   color: #000;
   font-weight: bold;
   font-size: 14px;
-  width: 27%;
-  text-align: center;
+  /* width: 27%;
+  text-align: center; */
+}
+.countWrap{
+  position: relative;
+  top: -14px;
+  right: 22px;
 }
 /* meadia query */
 .icon-success{
@@ -942,16 +947,21 @@ aside{
   }
 }
 @media screen and (max-width: 1023px){
-  .count{
+  .countWrap {
     position: relative;
-    top: -6px;
-    right: 31px;
+    top: -33px;
+    right: 1px;
+  }
+  .count{
+    position: absolute;
+    /* top: -6px; */
+    /* right: 31px; */
     z-index: 999!important;
     color: #000;
     font-weight: bold;
     font-size: 14px;
-    width: 31%;
-    text-align: center;
+    /* width: 31%;
+    text-align: center; */
   }
   .navbar-menu{
     background-color: #111;

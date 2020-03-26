@@ -97,6 +97,7 @@ function showProducts() {
     ajaxProducts(function(products){
             sortByRemembered(products);
             printProducts(products);
+            productsMore(products);
         });
 }
 function printProducts(products){
@@ -310,6 +311,7 @@ function sortByRemembered(products){
         if(!isEmptyStorage()){
             sortProducts(products, selection.val);
             printProducts(products);
+            productsMore(products);
         }
     }
 }
@@ -410,6 +412,8 @@ function readMore(){
       $(this).text("Read more")
     }
   });
+}
+function productReadMore(){
   ajaxProducts(function(products){
      products = filterMore(products);
    })

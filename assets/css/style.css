@@ -615,16 +615,11 @@ aside{
   text-transform: uppercase;
 }
 .count{
-  /* position: absolute; */
-  /* top: 12px; */
-  /* right: 19px; */
   z-index: 999!important;
   color: #000;
   font-weight: bold;
   font-size: 13px;
   line-height: normal;
-  /* width: 27%;
-  text-align: center; */
 }
 .countWrap{
   position: relative;
@@ -849,7 +844,7 @@ aside{
 }
 @media screen and (max-width: 360px){
   .countWrap{
-    top: -41px;
+    top: -41px!important;
     right: -3px!important;
   }
   .svg-inline--fa{
@@ -954,19 +949,14 @@ aside{
 @media screen and (max-width: 1023px){
   .countWrap {
     position: relative;
-    /* top: -32px; */
-    right: 1px;
+    right: -3px;
+    top: -37px;
   }
   .count{
-    /* position: absolute; */
-    /* top: -6px; */
-    /* right: 31px; */
     z-index: 999!important;
     color: #000;
     font-weight: bold;
     font-size: 14px;
-    /* width: 31%;
-    text-align: center; */
   }
   .navbar-menu{
     background-color: #111;

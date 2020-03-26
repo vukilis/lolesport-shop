@@ -621,7 +621,8 @@ aside{
   z-index: 999!important;
   color: #000;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 13px;
+  line-height: normal;
   /* width: 27%;
   text-align: center; */
 }
@@ -949,7 +950,7 @@ aside{
 @media screen and (max-width: 1023px){
   .countWrap {
     position: relative;
-    top: -33px;
+    top: -32px;
     right: 1px;
   }
   .count{

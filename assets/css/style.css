@@ -615,7 +615,7 @@ aside{
   text-transform: uppercase;
 }
 .count{
-  position: absolute;
+  /* position: absolute; */
   /* top: 12px; */
   /* right: 19px; */
   z-index: 999!important;
@@ -628,7 +628,7 @@ aside{
 }
 .countWrap{
   position: relative;
-  top: -14px;
+  top: -5px;
   right: 22px;
 }
 /* meadia query */
@@ -848,6 +848,10 @@ aside{
  }
 }
 @media screen and (max-width: 360px){
+  .countWrap{
+    top: -41px;
+    right: -3px!important;
+  }
   .svg-inline--fa{
     margin: 0 0.7rem;
   }
@@ -950,11 +954,11 @@ aside{
 @media screen and (max-width: 1023px){
   .countWrap {
     position: relative;
-    top: -32px;
+    /* top: -32px; */
     right: 1px;
   }
   .count{
-    position: absolute;
+    /* position: absolute; */
     /* top: -6px; */
     /* right: 31px; */
     z-index: 999!important;

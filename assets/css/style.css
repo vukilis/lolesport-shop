@@ -196,14 +196,6 @@ body::-webkit-scrollbar-thumb {
 
   border-top: 2px solid #edc60f;
 }
-/* #footer .columns {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-} */
-/* #footer .columns:last-child {
-    margin-bottom: 0;
-} */
 #footer a{
   color: #fff;
 }
@@ -216,12 +208,6 @@ body::-webkit-scrollbar-thumb {
 #footer p{
   margin-block-start: 0em;
 }
-/* .cpy{
-  text-align: center;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-  float: right;
-} */
 /* *************************** TEAMS.HTML ***************************** */
 #kategorijeLige{
   /* text-align: center; */

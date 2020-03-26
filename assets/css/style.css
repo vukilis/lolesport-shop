@@ -366,7 +366,7 @@ body::-webkit-scrollbar-thumb {
 }
 .tgBtn{
   height: 150px;
-  background-image: url('/assets/images/button.png');
+  background-image: url('../images/button.png');
   background-color: black;
   color: #fff;
   cursor: pointer;
@@ -411,7 +411,7 @@ body::-webkit-scrollbar-thumb {
   padding: 25px;
   background-color: transparent;
   height: 46px;
-  background-image: url('/assets/images/btnscroll.png');
+  background-image: url('../images/btnscroll.png');
   background-position-y: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -768,7 +768,7 @@ aside{
   border-radius: 25px;
   font-size: 16px;
   background-color: transparent;
-  background-image: url('/assets/images/searchicon.png');
+  background-image: url('../images/searchicon.png');
   background-position: 10px 8px;
   background-repeat: no-repeat;
   padding: 12px 10px 12px 40px;
@@ -1154,7 +1154,7 @@ input[type=range]:focus::-ms-fill-upper {
 .alertify-notifier.ajs-right .ajs-message.ajs-visible{
   border: 2px solid #b39556;
   font-weight: bold;
-  background-image: url('/assets/images/parallax-back.png');
+  background-image: url('../images/parallax-back.png');
   background-position: left top, center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1192,7 +1192,7 @@ input[type=range]:focus::-ms-fill-upper {
   z-index: 9999;
   overflow: hidden;
   background: #fff;
-  background-image: url('/assets/images/preloader.gif');
+  background-image: url('../images/preloader.gif');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

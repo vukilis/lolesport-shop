@@ -624,7 +624,10 @@ aside{
 .countWrap{
   position: relative;
   top: -5px;
-  right: 22px;
+  right: 25px;
+  width: 15px;
+  text-align: center;
+  margin: auto;
 }
 /* meadia query */
 .icon-success{
@@ -846,6 +849,7 @@ aside{
   .countWrap{
     top: -41px!important;
     right: -3px!important;
+    width: 20px;
   }
   .svg-inline--fa{
     margin: 0 0.7rem;

@@ -145,6 +145,7 @@ function removeAllData(){
     showEmptyCart();
     $('#totalCost').hide();
     $('#removeAll').hide();
+    document.querySelector(".count").style.display="none";
 }
 
 function emptyCart() {

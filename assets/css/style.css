@@ -174,7 +174,7 @@ body::-webkit-scrollbar-thumb {
     position: relative;
     z-index: 1;
     box-shadow: 0 0 25px rgba(0,0,0,.11);
-    background: url('/assets/images/button.png')no-repeat;
+    background: url('../images/button.png')no-repeat;
     background-size: cover;
     background-color: #000;
 }
@@ -297,7 +297,7 @@ body::-webkit-scrollbar-thumb {
   background: transparent;
 }
 .pozadina{
-  background-image: url('/assets/images/parallax-back.png'), url('/assets/images/parallax-deep.png');
+  background-image: url('../images/parallax-back.png'), url('../images/parallax-deep.png');
   background-position: left top, center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -305,13 +305,13 @@ body::-webkit-scrollbar-thumb {
   background-color: #000;
 }
 .pozadinaHeader1{
-  background-image: url('/assets/images/header-bg.png') ;
+  background-image: url('../images/header-bg.png') ;
   background-position: left top, center top;
   background-repeat: no-repeat;
   background-size: contain;
 }
 .pozadina2{
-  background-image: url('/assets/images/header-bg.png'), url('/assets/images/parallax-back.png'), url('/assets/images/parallax-deep.png');
+  background-image: url('../images/header-bg.png'), url('../images/parallax-back.png'), url('../images/parallax-deep.png');
   background-position: left top, center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -366,7 +366,7 @@ body::-webkit-scrollbar-thumb {
 }
 .tgBtn{
   height: 150px;
-  background-image: url('/assets/images/button.png');
+  background-image: url('../images/button.png');
   background-color: black;
   color: #fff;
   cursor: pointer;
@@ -411,7 +411,7 @@ body::-webkit-scrollbar-thumb {
   padding: 25px;
   background-color: transparent;
   height: 46px;
-  background-image: url('/assets/images/btnscroll.png');
+  background-image: url('../images/btnscroll.png');
   background-position-y: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -768,7 +768,7 @@ aside{
   border-radius: 25px;
   font-size: 16px;
   background-color: transparent;
-  background-image: url('/assets/images/searchicon.png');
+  background-image: url('../images/searchicon.png');
   background-position: 10px 8px;
   background-repeat: no-repeat;
   padding: 12px 10px 12px 40px;
@@ -1154,7 +1154,7 @@ input[type=range]:focus::-ms-fill-upper {
 .alertify-notifier.ajs-right .ajs-message.ajs-visible{
   border: 2px solid #b39556;
   font-weight: bold;
-  background-image: url('/assets/images/parallax-back.png');
+  background-image: url('../images/parallax-back.png');
   background-position: left top, center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1192,7 +1192,7 @@ input[type=range]:focus::-ms-fill-upper {
   z-index: 9999;
   overflow: hidden;
   background: #fff;
-  background-image: url('/assets/images/preloader.gif');
+  background-image: url('../images/preloader.gif');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

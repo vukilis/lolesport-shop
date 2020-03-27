@@ -26,7 +26,7 @@
         ],
         "delivery": true,
         "stars": 3,
-        "datum" : "2020-03-26",
+        "datum" : "2019-11-07",
         "sale" :{
           "saleOn": false,
           "src" : "borderImg.png"
@@ -63,7 +63,7 @@
         ],
         "delivery": false,
         "stars": 4,
-        "datum" : "2020-02-28",
+        "datum" : "2020-02-21",
         "sale" :{
           "saleOn": true,
           "src" : "borderImgGreen.png"
@@ -96,7 +96,7 @@
         ],
         "delivery": true,
         "stars": 5,
-        "datum" : "2020-03-21",
+        "datum" : "2019-03-26",
         "sale" :{
           "saleOn": true,
           "src" : "borderImgGreen.png"
@@ -133,7 +133,7 @@
         ],
         "delivery": true,
         "stars": 5,
-        "datum" : "2020-10-8",
+        "datum" : "2019-8-13",
         "sale" :{
           "saleOn": true,
           "src" : "borderImgGreen.png"
@@ -166,7 +166,7 @@
         ],
         "delivery": false,
         "stars": 2,
-        "datum" : "2020-05-17",
+        "datum" : "2020-01-28",
         "sale" :{
           "saleOn": true,
           "src" : "borderImg.png"
@@ -199,7 +199,7 @@
         ],
         "delivery": false,
         "stars": 4,
-        "datum" : "2020-07-23",
+        "datum" : "2020-05-15",
         "sale" :{
           "saleOn": true,
           "src" : "borderImgGreen.png"
@@ -232,7 +232,7 @@
         ],
         "delivery": true,
         "stars": 5,
-        "datum" : "2020-01-31",
+        "datum" : "2019-01-31",
         "sale" :{
           "saleOn": true,
           "src" : "borderImg.png"
@@ -265,7 +265,7 @@
         ],
         "delivery": false,
         "stars": 3,
-        "datum" : "2020-02-01",
+        "datum" : "2020-03-03",
         "sale" :{
           "saleOn": true,
           "src" : "borderImgGreen.png"
@@ -298,7 +298,7 @@
         ],
         "delivery": true,
         "stars": 4,
-        "datum" : "2020-05-05",
+        "datum" : "2019-05-10",
         "sale" :{
           "saleOn": true,
           "src" : "borderImg.png"

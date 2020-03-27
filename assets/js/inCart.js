@@ -109,13 +109,17 @@ function productsInCart() {
 
 // broj itema u korpi
 function onLoadCartNumbers(){
-  let productNumbers = localStorage.getItem('cartNumbers');
-  if(productNumbers === null){
-    document.querySelector('.cart span').textContent = 0;
-    showEmptyCart();
-  }else{
-    document.querySelector('.cart span').textContent = productNumbers;
-  }
+    let number = productsInCart();
+    var val = 0;
+    if(number==undefined || number==0){
+      document.querySelector(".count").style.display="none";
+    }else{
+      document.querySelector(".count").style.display="block";
+      for(let i=0;i<number.length;i++){
+        val+=number[i].quantity;
+      }
+      document.querySelector(".count").innerHTML=val;
+    }
 }
 
 // brisanje iz korpe
@@ -124,11 +128,11 @@ function removeFromCart(id) {
     let filtered = products.filter(p => p.id != id);
 
     localStorage.setItem("products", JSON.stringify(filtered));
+    onLoadCartNumbers();
     if(!filtered.length){
         showEmptyCart();
         $('#totalCost').hide();
         $('#removeAll').hide();
-        localStorage.setItem("cartNumbers", 0);
     }else{
         showProductCart();
     }

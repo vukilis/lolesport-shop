@@ -321,25 +321,20 @@ function rememberSort(val){
 
 // add to cart button
 function onLoadCartNumbers(){
-  let productNumbers = localStorage.getItem('cartNumbers');
-  if(productNumbers){
-    document.querySelector('.cart span').textContent = productNumbers;
-  }
-}
-function cartNumbers(){
-  let productNumbers = localStorage.getItem('cartNumbers');
-  console.log(productNumbers);
-  productNumbers = parseInt(productNumbers);
-  if(productNumbers){
-    localStorage.setItem('cartNumbers', productNumbers + 1);
-    document.querySelector('.cart span').textContent = productNumbers + 1;
-  }else{
-    localStorage.setItem('cartNumbers', 1);
-    document.querySelector('.cart span').textContent = 1;
-  }
+    let number = productsInCart();
+    var val = 0;
+    if(number==undefined || number==0){
+      document.querySelector(".count").style.display="none";
+    }else{
+      document.querySelector(".count").style.display="block";
+      for(let i=0;i<number.length;i++){
+        val+=number[i].quantity;
+      }
+      console.log(val);
+      document.querySelector(".count").innerHTML=val;
+    }
 }
 function addToCart() {
-    cartNumbers();
     const id = this.dataset.id;
     var products = productsInCart();
     if(products) {
@@ -383,6 +378,7 @@ function addToCart() {
         };
         localStorage.setItem("products", JSON.stringify(products));
     }
+    onLoadCartNumbers();
 }
 
 // LOCAL STORAGE SET AND GET

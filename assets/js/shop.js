@@ -402,10 +402,10 @@ function isEmptyStorage(){
 function readMore(){
   $('.moreless-button').click(function() {
     $('#moreProducts').slideToggle();
-    if ($('.moreless-button').text() == "Read more") {
-      $(this).text("Read less")
+    if ($('.moreless-button').text() == "Show more") {
+      $(this).text("Show less")
     } else {
-      $(this).text("Read more")
+      $(this).text("Show more")
     }
   });
 }

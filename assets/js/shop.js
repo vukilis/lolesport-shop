@@ -182,6 +182,7 @@ function filterCategories(e){
     products = filterCategory(products, idCategory);
     printProducts(products);
     productsMore(products);
+    sortByRemembered(products);
  });
 }
 function filterCategory(products, idCategory){

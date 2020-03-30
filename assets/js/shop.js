@@ -199,6 +199,7 @@ function filterBySizes(){
           products = filtBySize(products, chSizes);
           printProducts(products);
           productsMore(products);
+          sortByRemembered(products);
     })
 }
 function filtBySize(products, chSizes){
@@ -238,7 +239,7 @@ function priceRange() {
   document.getElementById("hprice").innerHTML = val + "$";
   ajaxProducts(function(products){
      products = filterPriceRange(products);
-     sortByRemembered(price)
+     sortByRemembered(price);
    })
 }
 function filterPriceRange(products) {

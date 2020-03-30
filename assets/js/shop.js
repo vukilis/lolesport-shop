@@ -238,6 +238,7 @@ function priceRange() {
   document.getElementById("hprice").innerHTML = val + "$";
   ajaxProducts(function(products){
      products = filterPriceRange(products);
+     sortByRemembered(price)
    })
 }
 function filterPriceRange(products) {

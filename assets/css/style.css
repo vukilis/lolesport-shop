@@ -1180,7 +1180,13 @@ input[type=range]:focus::-ms-fill-upper {
   margin-top: 5rem;
   margin-bottom: 5.3rem;
 }
-
+.hero-foot{
+  text-align: center;
+  padding: inherit;
+}
+.hero-foot .btn{
+  padding: 15px 15px;
+}
 /* Prelaoder */
 
 #preloader {
